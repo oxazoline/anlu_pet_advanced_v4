@@ -1,0 +1,42 @@
+{
+  "revision": "v24",
+  "base_numerical_labels": "Production V22_POLICY1: V22 with small H/R threshold changes; legacy V22_POLICY0 preserves V21 reference.",
+  "strong_R": {
+    "main_accepted_R": true,
+    "brow": 1536,
+    "down": 512,
+    "old_total": 1792,
+    "old_smile_max": -1024
+  },
+  "strong_R_entry": "2 of last3 fresh observations",
+  "weak_R_entry": "2 of last3 fresh observations",
+  "R_to_neutral": "Production V22:four consecutive N; legacy balanced:3of4 N",
+  "happy_temporal": "unchanged V21",
+  "C": {
+    "brow": 512,
+    "old_brow": 384,
+    "mouth": 64,
+    "raw_allowed": [
+      1,
+      2,
+      3
+    ],
+    "contrast_min": 24,
+    "orientation_min": 128,
+    "entry": "2 of last4 fresh combined results",
+    "exit": "3 consecutive noncombined results; quality/owner/no face/timeout immediate",
+    "requires_base_R": false,
+    "refresh_expression_freshness": true,
+    "refresh_detector_lifetime": false,
+    "mouth_OTHER": 64,
+    "mouth_OTHER_scope": "All non-H raw categories use64; legacy BALANCED_POLICY0 retains256."
+  },
+  "compact_debug": {
+    "default": true,
+    "zero_diagnostic_bits": "127:32",
+    "retained": "base scores computed unchanged internally; output margin31:0, action/strength/quality/orientation metadata, status, patch",
+    "display": "H/N/R rows labelled LITE",
+    "scope": "Prune diagnostic pipeline registers/muxes only; no classifier, weights, thresholds or camera changes",
+    "packed_A_byte": "bits159:153=clip(mouth_score>>>5,-64,63) signed7; bit152=strong_R"
+  }
+}

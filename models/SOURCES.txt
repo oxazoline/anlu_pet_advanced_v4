@@ -1,0 +1,22 @@
+﻿模型与测试数据来源
+
+OpenCV 4.10.0 人脸LBP模型与参考代码：
+https://github.com/opencv/opencv/tree/4.10.0
+许可见LICENSE_opencv.txt；各源文件中的版权声明保持不变。
+
+FERPlus表情数据与标签资料：
+https://github.com/microsoft/FERPlus
+许可见LICENSE_FERPlus.txt。表情标签用于可见外观分类。
+
+手势数据：Arda Mavi, Sign Language Digits Dataset
+https://github.com/ardamavi/Sign-Language-Digits-Dataset
+许可见LICENSE_gesture_dataset.txt。配套验证文件提供固定测试向量；离线结果不代表实机准确率。
+
+验证向量采用项目最终RTL回归的固定输入与期望输出，包含合成场景和公开样例的变换。
+模型参数与可综合ROM均已提供，综合工程不需要下载或重新训练数据。
+
+astronaut.png: https://raw.githubusercontent.com/scikit-image/scikit-image/v0.19.3/skimage/data/astronaut.png
+NASA astronaut Eileen Collins; public domain NASA image, distributed in scikit-image. Used for engineering smoke tests only, not an accuracy benchmark.
+
+grace_hopper.jpg: https://raw.githubusercontent.com/matplotlib/matplotlib/v3.9.2/lib/matplotlib/mpl-data/sample_data/grace_hopper.jpg
+Official US Navy public-domain portrait of Grace Hopper; matplotlib sample image. CPU generalization smoke test only.

@@ -1,0 +1,1093 @@
+{
+  "tb_advanced_base_osd": [
+    "# PASS ADVANCED BASE OSD: original logo alpha/RGB, face geometry, H label and background equal to V26 over700992 pixels; sync/DE preserved"
+  ],
+  "tb_advanced_font": [
+    "# PASS ADVANCED FONT: all256 character codes x16 rows identical to V26, one-cycle ROM output"
+  ],
+  "tb_advanced_frame_boxes": [
+    "# PASS ADVANCED FRAME BOXES: source7/source8 cache follows selected video id, missing frame hidden, old repeated frame expires"
+  ],
+  "tb_advanced_hand_rom": [
+    "# PASS ADVANCED HAND ROM: all6144 signed3 coefficients,12 signed16 biases and signed8 heads equal frozen Python model"
+  ],
+  "tb_advanced_hold": [
+    "# PASS ADVANCED HOLD: two fresh positives, three misses, bounded wall-clock age and reset"
+  ],
+  "tb_advanced_latency": [
+    "# PASS ADVANCED LATENCY: four async clocks, capture timestamp/id/mode bound to chosen DDR slot, incomplete publication blocked, repeats separated, reset"
+  ],
+  "tb_advanced_motion": [
+    "# PASS ADVANCED MOTION: complete720p streams, initialization, static rejection, translated object bbox/event, bounded withdrawal, global illumination veto"
+  ],
+  "tb_advanced_overlay": [
+    "# PASS ADVANCED OVERLAY: full720p raster, decimal latency/max/id, frame-atomic boxes, exact active pixel count and aligned two-stage output"
+  ],
+  "tb_advanced_ui_preserve": [
+    "# PASS ADVANCED UI: production lite configuration retains H/N/R/C labels and face geometry while replacing legacy detailed diagnostics"
+  ],
+  "tb_advanced_v2_axis": [
+    "# PASS ADVANCED V2 AXIS: supported run bridges short gaps and rejects isolated distant skin evidence"
+  ],
+  "tb_advanced_v2_pixels": [
+    "# PASS ADVANCED V2 PIXELS: distinct RGB96 lanes, complete source pixels, 57600 exact skin/ink cell comparisons per repetition, printed original/dim/dark distractor and isolated hand speckle, exact integer score"
+  ],
+  "tb_advanced_v2_track": [
+    "# PASS ADVANCED V2 TRACK: two of three/high_conf acquisition, six-miss withdrawal, score hysteresis, jitter deadband/damping, isolated jump rejection, reacquisition and age cap"
+  ],
+  "tb_advanced_v3_ae_i2c": [
+    "# PASS ADVANCED V3 AE I2C: automatic bright/dark decisions drive real open-drain SCL/SDA, grouped sensor writes and six-byte register readback; no forced protocol outputs, verified updates15"
+  ],
+  "tb_advanced_v3_auto_exposure": [
+    "# PASS ADVANCED V3 AUTO EXPOSURE: delayed sensor plant bright/dark convergence, stable deadband, zone preference, fresh-only votes, settle frames, grouped-write stability, manual override/resume, safe bounds, stale-meter stop and sequence wrap"
+  ],
+  "tb_advanced_v3_meter": [
+    "# PASS ADVANCED V3 METER: three full RGB96 frames, exact two4096-cell linear-luma means, saturation fraction, consecutive-frame reset, source ID and asynchronous bundled transfer"
+  ],
+  "tb_advanced_v3_ref_track": [
+    "# PASS ADVANCED V3 REF TRACK: strong one-hit entry, two-hit normal entry, immediate position, measured weak tracking, flagged two-frame prediction, strict recovery, finite weak lifetime and age timeout"
+  ],
+  "tb_advanced_v3_tracking": [
+    "# PASS ADVANCED V3 TRACKING PIXELS:26 complete720p camera frames, <=2-frame clear acquisition, measured horizontal follow through brightness/blur/partial obstruction, bounded32px error, coherent source IDs, removal timeout and unrelated-cross rejection"
+  ],
+  "tb_advanced_v4_auto_exposure": [
+    "# PASS ADVANCED V4 FAST AUTO EXPOSURE: delayed sensor plant bright/dark convergence, stable deadband, zone preference, fresh-only votes, settle frames, grouped-write stability, manual override/resume, safe bounds, stale-meter stop and sequence wrap"
+  ],
+  "tb_advanced_v4_pet": [
+    "# PASS ADVANCED V4 PET: all pixels of seven720p frames, HAPPY/R/neutral mapping, missing-face neutral, Rice priority, mirrored left/right placement and aligned RGB/DE"
+  ],
+  "tb_advanced_v4_skin": [
+    "# PASS ADVANCED V4 SKIN: dim chromatic skin accepted; warm paper, neutral paper, black and blue excluded through actual RGB pipeline"
+  ],
+  "tb_advanced_v4_tracking": [
+    "# PASS ADVANCED V4 TRACKING PIXELS:26 complete720p camera frames, <=2-frame clear acquisition, 24px/capture measured horizontal follow through brightness/blur/partial obstruction, bounded32px error, coherent source IDs, removal timeout and unrelated-cross rejection"
+  ],
+  "tb_advanced_vision": [
+    "# PASS ADVANCED VISION: actual1280x720 four-lane streams, user reference and size/brightness variants, shapes and public gesture positives/negatives, frozen integer MLP equivalence, temporal acquisition/withdrawal"
+  ],
+  "tb_awb_frames": [
+    "# PASS FRAME AWB: five frames, four lanes, independent integer gain ratios, frame-only updates, unity startup, white rejection, gain/output saturation, gaps/line markers, >=64-cycle SOF lead, tail/reset"
+  ],
+  "tb_basic_core": [
+    "# PASS CORE: 921600 pixels, 172800 DDR words, grayscale/markers/gaps match",
+    "# PASS RESET: incomplete group discarded; coincident SOF/data preserved"
+  ],
+  "tb_basic_osd": [
+    "# PASS OSD: full 1280x720 frame, logo/text/background/sync/status, SAT 0/100/150 percent and frame snapshot, all 97 LUT entries, full-stream equivalence with one additional clock verified"
+  ],
+  "tb_cartoon_core": [
+    "# PASS CARTOON CORE: independent image reference; all modes; mid-beat split; 3x3 RGB smoothing, soft luma terraces, bounded contours and diagnostic mask; four lanes and beat boundaries; valid gaps; both SOF forms; frame-atomic mode; stale-RAM reset; 24 frames"
+  ],
+  "tb_cartoon_quality": [
+    "# PASS IMAGE QUALITY: all 256 flat gray levels plus 256 unclipped colors, exact left bypass, no flat false contours, +/-4 luma bound, no dark collapse, monotonic <=2 adjacent gray steps, RGB difference preservation, 512 consecutive stale-RAM frames"
+  ],
+  "tb_cartoon_stream": [
+    "# PASS CARTOON STREAM: 4 full frames at 0/64/96/32, independent V5 luma + RGB chroma + causal cartoon reference through DDR packing, frame-atomic target, gaps/contiguous lines/borders, zero FIFO faults, consecutive frames without reset"
+  ],
+  "tb_chroma_scale": [
+    "# PASS CHROMA SCALE: all 512 signed deltas x 128 scales exactly match independent multiplication, bubbles and aligned controls; registered DSP multiplier with unchanged three-cycle latency"
+  ],
+  "tb_color_stream": [
+    "# PASS COLOR STREAM: 4 full frames at 0/64/96/32, independent V5 luma + co-located RGB chroma reference, frame-atomic target, gaps/contiguous lines/borders, zero FIFO faults, consecutive frames without reset"
+  ],
+  "tb_display": [
+    "# PASS: serializer and HDMI DE aligned, 3840 distinct RGB pixels in three 1280-pixel rows match packed DDR byte stream."
+  ],
+  "tb_display_startup": [
+    "# PASS STARTUP: independent clocks, three SOFs, DDR gate and reset recovery"
+  ],
+  "tb_expression_action_policy": [
+    "# PASS ACTION POLICY: 3652 boundary/gate cases including3072 reconstructed photo diagnostic intervals accepted as NERVOUS; independent brow/down/press paths, smile veto, original path preservation and coherent readable flags. Diagnostic replay only, not camera pixels."
+  ],
+  "tb_expression_au": [
+    "# PASS AU STUDENT: 32 real-pixel native48/native32 enabled tension/physical-orientation head and rotated cases, exact 8 hidden/6 logits/8 main scores, learned HAPPY/NEUTRAL correction to NERVOUS and coherent RAW/RS"
+  ],
+  "tb_expression_au_limits": [
+    "# PASS AU LIMITS: actual six-head ROM/MAC, all256 legal hidden corners plus256 random vectors, signed16 saturation and NERVOUS predicate match full32 CPU; clipped156"
+  ],
+  "tb_expression_balanced_other_m_pipeline": [
+    "# PASS BALANCED OTHER M PIPELINE:20 full real four-lane camera frames, exact2x2 capture, actual model OTHER/rejection2/base0 and weak mouth128..255 with independent C, real appearance bridge F1M sustained16 frames without RS2/C expiry, effective-valid200-bit CDC/frame snapshot/all13 glyphs, compact96-bit payload with retained margin and timeout clear; no forced classifier outputs"
+  ],
+  "tb_expression_balanced_pixels": [
+    "# PASS BALANCED PIXELS:32 actual native48/native32/rotated images through original V21 and balanced shared-MAC core with exact unchanged base scores/classes, independent C on rejected OTHER and neutral, exact packed mouth/strong-R diagnostics, compact96-bit zero diagnostics with full internal scores and exact32-bit margin;3200 signed/contrast/orientation/mouth/brow/strong thresholds plus1024 photo-derived score-interval replays (diagnostic values, not camera pixels), HAPPY/low-quality protected"
+  ],
+  "tb_expression_balanced_temporal": [
+    "# PASS BALANCED TEMPORAL:sparse R and recovery:100 isolated R spikes rejected; R/N/R or weak RR confirmed; three-of4 neutral release, unchanged HAPPY2of3/fast/four-neutral behavior; expired weak-R reacquisition; C2of4, three misses exit; rejected OTHER freshness and independent10-SOF face expiry"
+  ],
+  "tb_expression_capture": [
+    "# PASS EXPRESSION CAPTURE: ten native48/native32 geometries including real supported-P and large H/P pixel streams, every2x2 pixel against independent coordinate division, exact48-to32 preview, minimum stride/all phases/gaps/white/edges/partial restart and mode-aware bounds"
+  ],
+  "tb_expression_cbrow_pipeline": [
+    "# PASS CBROW CAMERA PIPELINE:20 full real four-lane camera frames, exact2x2 capture, actual model OTHER/rejection2/base0 and weak mouth128..255 with independent C, real appearance bridge F1M sustained16 frames without RS2/C expiry, effective-valid200-bit CDC/frame snapshot/all13 glyphs, compact96-bit payload with retained margin and timeout clear; no forced classifier outputs"
+  ],
+  "tb_expression_cbrow_pixels": [
+    "# PASS CBROW PIXELS:32 real native48/native32/rotated images through actual dedicated shared-MAC model; exact NPZ hidden and two scores, unchanged literal V24 main/AU/cue/mouth/orientation/classification, compact margin saturation and independent C"
+  ],
+  "tb_expression_cbrow_policy": [
+    "# PASS CBROW POLICY:128 independent brow0/joint384/mouth64/raw/contrast/orientation boundaries; compact margin clipping preserves native2188 and low2432 HAPPY fast gate"
+  ],
+  "tb_expression_cbrow_temporal": [
+    "# PASS CBROW TEMPORAL:two consecutive C enter; separated1001 spikes cannot acquire; two misses hold/three exit, OTHER allowed and H/owner/quality clear immediate"
+  ],
+  "tb_expression_cdc": [
+    "# PASS EXPRESSION CDC: held-until-ack invariant, periodic idle snapshots without wide compare, reset recovery; 200-bit score/status bundle, one-edge data/control skew, rapid coalesced updates, final stable value and reset"
+  ],
+  "tb_expression_coast_profile": [
+    "# PASS EXPRESSION COAST PROFILE: supported P captures/classes without default, unsupported initial P blocked, H/P captures through nine SOFs, tenth expires despite classifier updates, late result/foreign ROI/removal cannot resurrect lifetime, independent stale-result expiry, coherent eligibility/owner/profile/RS flags"
+  ],
+  "tb_expression_compact_debug": [
+    "# PASS COMPACT DEBUG:explicit H/N/R LITE rows ignore incoming numeric scores, full32-bit margin/action/strength/status flags retained, C label and frame-atomic metadata unchanged; full-score legacy formatting tested separately"
+  ],
+  "tb_expression_confused_limits_v21base": [
+    "# PASS V21 BASE MOUTH LIMITS:64 legal histogram/main-hidden extrema and interiors, exact selected504 features/packed signed4 weights/mode biases and signed16 saturation"
+  ],
+  "tb_expression_confused_pipeline_v21base": [
+    "# PASS V21 CONFUSED PIPELINE:three full real camera streams with exact2x2 capture, production-enabled model, independent overlay over unchanged V21 code3, unchanged200-bit async transfer, frame snapshot, all13 glyphs including final D, no-face clear"
+  ],
+  "tb_expression_confused_policy_v21base": [
+    "# PASS V21 CONFUSED POLICY:1536 independent signed/brow/mouth/raw/contrast/orientation boundaries; base H/N/R/rejection exact, C requires already accepted V21 R, raw HAPPY/OTHER and low-quality protected"
+  ],
+  "tb_expression_core": [
+    "# PASS EXPRESSION CORE: 15 native48/native32 patches; all 4032 normalized histogram/remainder counts and 8 integer scores each match independent CPU reference, HAPPY/NEUTRAL/NERVOUS and internal rejection, real FER Training patches, rotated pairs, flat/ramp/noise, exact reject threshold"
+  ],
+  "tb_expression_cue_limits_v21": [
+    "# PASS V21 CUE LIMITS: all256 hidden corners and256 interiors through actual shared signed4/signed8 ROM phase, exact two logits and saturating score storage"
+  ],
+  "tb_expression_cue_policy_v21": [
+    "# PASS V21 CUE POLICY: 512 independent signed/boundary/contrast/orientation/raw cases, raw HAPPY and OTHER protected, old smile veto does not suppress independent action cues"
+  ],
+  "tb_expression_cue_v21": [
+    "# PASS V21 CUE PIXELS: 32 real native48/native32/rotated inputs, exact hidden/logits/main/oldAU, new nervous witnesses, original HAPPY unchanged and bounded shared-MAC latency"
+  ],
+  "tb_expression_debug": [
+    "# PASS EXPRESSION DEBUG: signed32 raw scores/margin/contrast/reason/frame IDs, raw and actual label, eligibility/owner/profile/support/busy/capture glyphs, readable T/B/D/P/S action flags, frame snapshots, 16384 enlarged preview pixels aligned with video"
+  ],
+  "tb_expression_gate": [
+    "# PASS EXPRESSION GATE: both resolutions/orientations, signed HAPPY-vs-tense competitor rejection, exact gate/global-margin boundaries, no rejection of valid NERVOUS, contrast and OTHER isolation"
+  ],
+  "tb_expression_partial": [
+    "# PASS PARTIAL APPEARANCE: real portrait, left/right occlusion, two fresh partial confirmations, no untrained acquisition, blank/foreign/owner rejection"
+  ],
+  "tb_expression_pipeline": [
+    "# PASS EXPRESSION PIPELINE: actual top-level preview instance, 1024 samples through real capture/model/commit/async-preview, IDs and VS-only publication, no forced inference"
+  ],
+  "tb_expression_preview": [
+    "# PASS EXPRESSION PREVIEW: asynchronous clocks, exact 1024 pixels, frame-only swap, pending/partial drops, bank safety and reset"
+  ],
+  "tb_expression_priority": [
+    "# PASS V18 PRIORITY: active action-head default, four-neutral smile release, two-fresh NERVOUS preemption, no single-glitch transitions, invalid suppression"
+  ],
+  "tb_expression_responsive_boundaries": [
+    "# PASS RESPONSIVE BOUNDARIES:128 exact new brow512/old384/mouth64/raw/contrast/orientation combinations;65536 signed brow values retain raw HAPPY protection; base gates unchanged"
+  ],
+  "tb_expression_responsive_history": [
+    "# PASS RESPONSIVE HISTORY:4096 independent12-result N/R histories versus sliding-window oracle; entry2of3, neutral release3of4, no single-spike acquisition"
+  ],
+  "tb_expression_roi_owner": [
+    "# PASS EXPRESSION ROI OWNER: busy SOF preserves captured geometry, enlarged/foreign box invalidates old label and blocks preview commit, next idle SOF starts fresh and ordinary jitter remains valid"
+  ],
+  "tb_expression_roi_status_cdc": [
+    "# PASS EXPRESSION ROI STATUS CDC: synchronous registered face change never publishes RAW=N RS0 VALID1 label0; selected VS reports RS F owner0 VALID0 while all3072 bottom pixels bypass text; fresh neutral result restores label. This is control timing, not camera accuracy. src_samples=0 dst_samples=0"
+  ],
+  "tb_expression_temporal": [
+    "# PASS EXPRESSION TEMPORAL: two-result tense confirmation, two-result tense-to-smile/neutral confirmation, interrupted weak evidence reset, three-reject stale-HAPPY clear, ten-SOF detector-support coast independent of classification and immediate invalid suppression, accepted profile labels allowed"
+  ],
+  "tb_expression_temporal_v20": [
+    "# PASS V20 TEMPORAL: two-of-three fresh positive evidence, four-neutral nervous release, four-consecutive smile release, rejected/gap/owner invalidation, native48 fast happy2304"
+  ],
+  "tb_expression_ui": [
+    "# PASS EXPRESSION UI: only HAPPY/NEUTRAL/NERVOUS rendered, no UNKNOWN word or label rectangle for invalid input, no label without a visible face"
+  ],
+  "tb_expression_v21_equivalence": [
+    "# PASS V21 EQUIVALENCE:32 real native48/native32/180-degree inputs through original V21 RTL and production-enabled mouth core, exact base labels/rejections/main/AU/cue/orientation/margins, independent C witness, bounded added serial work"
+  ],
+  "tb_expression_v21_temporal_equivalence": [
+    "# PASS V21 TEMPORAL EQUIVALENCE:4096 randomized fresh sequences against original V21 capture RTL; exact label/pending/gap/reject/stale states, independent C two-of-three entry/release, isolated/rejected spike suppression, immediate H/owner/stale clear and unchanged face eligibility"
+  ],
+  "tb_expression_v22_sensitive_pixels": [
+    "# PASS V22 SENSITIVE PIXELS:32 real native48/native32/rotated fixtures versus literal V22 RTL; exact main/AU/cue/orientation scores, preserved accepted H/R with small additional gates; exact H margin/gap and R brow480/down-144 boundaries, low quality protected"
+  ],
+  "tb_expression_v22_sensitive_temporal": [
+    "# PASS V22 SENSITIVE TEMPORAL:actual production defaults V22 two-of3 H/R and four consecutive N release; fast H2188/native and2432/low exact boundaries, retained R-to-H two updates, no single-spike acquisition, owner loss clears"
+  ],
+  "tb_expression_visual": [
+    "# PASS VISUAL SUPPORT: real face pixels, normal/inverted/native32 eye glare and upper-lens reacquisition veto, no first-entry acquisition, blank/foreign rejection, fresh/absolute deadline, timeout clearing"
+  ],
+  "tb_expression_visual_pipeline": [
+    "# PASS VISUAL PIPELINE: four full real-pixel camera frames, production base plus enabled action model, actual2x2 capture/NERVOUS display/descriptor, eye-glare M refresh, inference/preview commits, independent M eligibility beyond prediction budget and timeout clearing"
+  ],
+  "tb_expression_weights": [
+    "# PASS EXPRESSION WEIGHTS: all64512 original signed6 model bytes, neuron seeks, backpressure, abort/restart; total=66535"
+  ],
+  "tb_extension_mode_boundaries": [
+    "# PASS MODE BOUNDARIES:1024 signed normal-brow-128/mouth128/joint384 and strong-profile0/256/768 raw/contrast/orientation boundary combinations"
+  ],
+  "tb_extension_mode_core": [
+    "# PASS MODE CORE:32 native48/native32/rotated actual pixel inputs versus literal V25; all H/R scores/labels/rejections unchanged; mode=0, removed auxiliary-path saving=0 cycles; guarded C/Q CPU oracle exact"
+  ],
+  "tb_extension_mode_pipeline": [
+    "# PASS MODE CAMERA PIPELINE:20 full1280x720 actual four-lane streams, weak open OTHER C frontal acquisition,16 flagged profile frames reject insufficient C evidence,200-bit CDC/frame snapshot excludes stale C, owner clear"
+  ],
+  "tb_extension_mode_temporal": [
+    "# PASS MODE TEMPORAL:actual defaults, mouth0 C immediately rejected/withdrawn with R fallback, weak profile cannot steal R, strong profile may confirm, owner clear; no-C metadata/runtime excludes C"
+  ],
+  "tb_extension_mode_ui": [
+    "# PASS MODE UI:actual default C display enable/exclusion and guarded Q diagnostic"
+  ],
+  "tb_face_capture": [
+    "# PASS FACE CAPTURE: real four-pixel stream, 160x90 integral exact over two captures without clearing RAM; gaps/row strides/prefix arithmetic, busy SOF skipping, watchdog clears status and reset"
+  ],
+  "tb_face_enlarge": [
+    "# PASS FACE ENLARGE: three fresh spatially consistent frontal enclosing detections, no one/two-hit expansion, weak/profile/foreign isolation and timeout cancellation; ordinary acquisition unchanged"
+  ],
+  "tb_face_entry_sequence": [
+    "# PASS FACE ENTRY SEQUENCE: real pixel capture, integral RAM, cascade and tracker; three strong fresh results acquire a translated 240px public face"
+  ],
+  "tb_face_frontal_entry": [
+    "# PASS FACE FRONTAL ENTRY: six actual-cascade scans, constant full-view entry work, nine-vote frontal result and fast zero-support ROI recovery"
+  ],
+  "tb_face_glare_schedule_v16": [
+    "# PASS V16 GLARE SCHEDULE: raw first entry, registered strong contained-reject knee/raw retry, weak-profile retry, supported-face stability, foreign isolation and bounded expiry"
+  ],
+  "tb_face_highlight_retry": [
+    "# PASS HIGHLIGHT RETRY: raw-first, failed-scan retry/return, two full 14400-integral frames, exact highlight knee and ordinary-gray preservation"
+  ],
+  "tb_face_large": [
+    "# PASS FACE LARGE: actual20-stage cascade, two cropped large-face scenes/four negatives, all decisions and geometry match independent128-row zero-padding reference, physical RAM bounded, no extra integral memory"
+  ],
+  "tb_face_large_entry": [
+    "# PASS FACE LARGE ENTRY: three real four-pixel frames through integral RAM, virtual20-stage cascade and tracker, retained hinted near mode, strict acquisition and bounded on-screen88-cell FER ROI"
+  ],
+  "tb_face_large_policy": [
+    "# PASS FACE LARGE POLICY: bounded empty-scan discovery, native full field, virtual hint conversion, clipped ROI centers/borders, alternating baseline/near wide refresh and retained strong near confirmation"
+  ],
+  "tb_face_lbp": [
+    "# PASS FACE LBP: 11 full integral scenes, actual trained 20-stage cascade, all raw hit positions/order and grouped results match independent Q12 reference; float comparison logged separately, including quantized early-exit differences; 3 frontal placements, normal/upside-down left/right profiles and 4 negatives; cycles=53457081"
+  ],
+  "tb_face_maintenance": [
+    "# PASS FACE MAINTENANCE: V8 counterexample fixed, actual tracker accepts local frontal2, pose remains conservative until frontal7, three-hit strict entry and no weak global acquisition"
+  ],
+  "tb_face_model": [
+    "# PASS FACE MODEL: all feature/leaf ROM words, 4096 banked category-subset words, frontal/profile stage endpoints and signed Q12 thresholds match independent XML decoding"
+  ],
+  "tb_face_near_escape": [
+    "# PASS NEAR ESCAPE: strong near retained, weak near releases frontal-only scan, profile3 may seed five-hit confirmation, frontal3 cannot seed hint"
+  ],
+  "tb_face_occlusion_v14": [
+    "# PASS PROFILE OCCLUSION: actual cascades on four profile orientations with fixed forehead bands and four synthetic negatives; independent reference matches"
+  ],
+  "tb_face_overlay": [
+    "# PASS FACE OVERLAY: coordinate x8 scaling, 2-pixel green border, interior preserved in compact full-color view, frame snapshot, next-frame clear, V5 H/T header priority"
+  ],
+  "tb_face_pose_probe": [
+    "# PASS POSE PROBE: weak frontal cannot starve a stronger profile, one bounded probe preserves saved geometry, no strong frontal delay, global weak profile observation"
+  ],
+  "tb_face_prefilter": [
+    "# PASS FACE PREFILTER: all14400 integrals from independent 4x4 arithmetic in full and zoom fields, different consecutive frames, valid gaps, exact rounding, bounded empty-scan fallback and supported-mode retention"
+  ],
+  "tb_face_priority": [
+    "# PASS FACE PRIORITY V9: all global starts frontal-first, four unique rotating profile fallbacks, profile priority, two-round frontal probe, weak local maintenance with conservative pose, immediate frontal recovery"
+  ],
+  "tb_face_profile_entry_v14": [
+    "# PASS ACTUAL PROFILE ENTRY: five actual cascade/tracker scans of a fixed forehead-occluded portrait, localized repeat confirmation and no early acquisition"
+  ],
+  "tb_face_profile_hint_v21": [
+    "# PASS PROFILE HINT V21: invisible weak profile search memory tolerates one miss only; second separated miss, timeout and frontal miss clear immediately"
+  ],
+  "tb_face_profile_phase_v21": [
+    "# PASS PROFILE PHASE V21: four parity grids after global misses, frontal origin unchanged, exactly five passes, successful/hinted phase retention and timeout reset"
+  ],
+  "tb_face_profile_pixels_v21": [
+    "# PASS V21 PROFILE PIXELS: both mirrored forehead-band scenes converge from missed even grid to odd-row hits, independent exact geometry/votes, four persistent negative scenes across all four phases"
+  ],
+  "tb_face_profile_roi": [
+    "# PASS FACE PROFILE ROI: real inverted profile, strong first acquisition evidence, remembered direction, periodic frontal-probe fallback and faster hinted re-detection"
+  ],
+  "tb_face_recovery": [
+    "# PASS FACE RECOVERY: real tracker integration, three fresh strong hits still required, hidden recent ROI, no periodic hint drop during coast, two-attempt bound, absolute expiry without done, restored zoom and no stale green boxes"
+  ],
+  "tb_face_roi": [
+    "# PASS FACE ROI: actual trained cascade, global and hinted rounds yield identical nine-vote face; local scan more than twice as fast"
+  ],
+  "tb_face_scale_anchor_v16": [
+    "# PASS V16 SCALE ANCHOR: strong upper-only and gradual collapse rejected; bounded rounds/absolute expiry; centered retreat/profile shrink preserved; upward-retreat ambiguity clears and reacquires without stale hold"
+  ],
+  "tb_face_select": [
+    "# PASS FACE SELECT V5: global acquisition, local priority over stronger foreign group, minimum local support, relative-size association, last-slot inclusion, scan-start hint snapshot/reset"
+  ],
+  "tb_face_shrink_guard": [
+    "# PASS SHRINK GUARD: weak eye-only geometry rejected, bounded disappearance, three strong consistent shrink confirmations, interruption and ordinary retreat preserved"
+  ],
+  "tb_face_tiles": [
+    "# PASS FACE TILES: nine overlapping 640x360 views, 180px-square coverage on tested 4px lattice (not all pixels), sample boundaries, global alternation and small-face detail restoration and zoom exit at40 units"
+  ],
+  "tb_face_track": [
+    "# PASS FACE TRACK V5: weak/background entry rejection, three-hit spatial confirmation, low-support maintenance, bounded decaying prediction, local recovery, foreign candidate isolation, loss-round and absolute deadlines, pending expiry, clipping including smoothed edge boxes, timeout, asynchronous CDC/reset"
+  ],
+  "tb_face_weak_profile_entry": [
+    "# PASS WEAK PROFILE ENTRY: frontal weak rejection, five consistent profile hits, mixed-strength guard, strong three preserved, one-gap tolerance, two-miss/spatial/deadline/timeout rejection"
+  ],
+  "tb_face_wide_refresh": [
+    "# PASS FACE WIDE REFRESH: tracked small ROI periodically forces full field plus zero hint, capture-latched hint survives refresh wrap, next capture restores zoom and pending acquisition remains uninterrupted"
+  ],
+  "tb_face_zoom": [
+    "# PASS FACE ZOOM: full/center/top-left 2x capture exact all 14400 integral values against independent four-lane/gap stream; alternating schedule, odd-coordinate global mapping, reciprocal hint conversion/reset"
+  ],
+  "tb_face_zoom_policy": [
+    "# PASS FACE ZOOM POLICY: all sizes12..88 and both history states, detail restoration at24..32, bounded hysteresis, diagnostic seed crop and discovery schedule"
+  ],
+  "tb_fault_counter": [
+    "# PASS COUNTER: asynchronous clocks, BOOT/RUN split, event cycles, CDC settle, saturation/reset"
+  ],
+  "tb_fault_events": [
+    "# PASS FIFO EVENTS: real video_in/out transfer qualification, sticky history/reset, reset suppression"
+  ],
+  "tb_gray_rgb_exhaustive_v16": [
+    "# PASS GRAY EXHAUSTIVE V16: all16777216 RGB combinations across four lanes match independent 77R+150G+29B integer oracle; exact unchanged two-clock data/valid/SOF/last, gaps and blank-SOF, midstream reset, no truncation/saturation/rounding changes; blank_sofs=4082 reset_checks=5"
+  ],
+  "tb_hdmi_serial_reset": [
+    "# PASS HDMI SERIAL RESET: 13769 native-lane TMDS bits equal frozen V8 after startup, 5 reset phases, two-edge release, immediate assertion and stopped-clock safety"
+  ],
+  "tb_i2c_diagnostics": [
+    "# PASS I2C DIAG: BOOT error retained, repeated RUN errors counted despite sticky history, held-level qualification"
+  ],
+  "tb_logo_sync": [
+    "# PASS LOGO SYNC: all 32768 addresses and all 25 alpha/RGB bits equal to original case ROM; two synchronous cycles"
+  ],
+  "tb_lowgain_ae": [
+    "# PASS AE: 16x analog/unity digital, grouped eight-register writes, defaults/buttons/debounce/clamps; writes=53"
+  ],
+  "tb_saturation_keys": [
+    "# PASS SAT KEYS: synchronizer/debounce/tap/hold/both/release/clamps/reset; asynchronous bundled CDC rapid updates/held bus/reset"
+  ],
+  "tb_sensor_readback": [
+    "# PASS SENSOR READBACK: physical SCL/SDA, chip ID, init + grouped AE, six register reads, 3e02 NACK/mismatch, rewrite recovery/history"
+  ],
+  "tb_sensor_startup_retry": [
+    "# PASS STARTUP READBACK RETRY: real ae_set and SCL/SDA, no keys, first exposure group deliberately ignored, automatic same-value rewrite and verified green, no fake expected values or endless retry"
+  ],
+  "tb_spatial_chain": [
+    "# PASS SPATIAL CHAIN: 2 full 1280x720 frames, independent RGB->gray->horizontal->vertical->detail->tone->DDR reference, gaps/contiguous lines/borders/SOF/reset history"
+  ],
+  "tb_tone_detail": [
+    "# PASS TONE/DETAIL: all 256 tone levels and controls, monotonic endpoints; 2031616 detail triplets, gate/cap/saturation"
+  ],
+  "tb_video_timing": [
+    "# PASS TIMING: VTC/mixer/OSD integrated, 1280x720 active, 1650x750 total, initial prefetch guard"
+  ],
+  "tb_zhenghe_hold": [
+    "# PASS ZHENGHE HOLD: 4 frames, 10240 writes, all 320 addresses/wrap, bubbles, line/frame markers, reset and every output cycle equal to frozen original; native buffer has no functional latency"
+  ],
+  "rtl_sha256": {
+    "adv_pet_rom.v": "101fc88d364c08b2631f39d3dcb2baff32347c4b8a8c26d2de6959bd45543163",
+    "adv_pet_overlay.v": "316c7b2dfddabd2b4de316661c6f299d051e3be5c1c68d24f0e9a61669fe8f9a",
+    "adv_logo_compact.v": "692867680bdff35ab78f9096d22c0a0c12696c06313ad01068850cf086c69618",
+    "adv_motion_hold.v": "009481f2ed8c11c6afe8f88282428c2b2bb0a549a9260e3ee64725c64afda6ac",
+    "adv_auto_exposure.v": "9ff125ca652211f57d25f98dd845ebafb1e0e819fcdc18c4cf68cbc7afe2e5b1",
+    "adv_ref_track.v": "9e3223854dcab5daf6512d19eec12ba9205f147373870aa07ea523d0f93e0db5",
+    "adv_font_rom.v": "6757f95d212d715eed90f0d4f1bc372cf5fe5217d6504715afa73df15c7cf60f",
+    "adv_base_osd.v": "0082f84c7d38159d636432ab2cf8f5c69a9721d877b8e513915c19391bf57013",
+    "adv_hand_weights.v": "784878d19c6cf7371069086a673ce54274b12cafa0aba827a49543fc75a8af1a",
+    "adv_ref_rows.v": "8567c7a9b45f11176cd2e9266bd8b00ef3de8b19b1a99c0a119bd26c03141bd1",
+    "adv_axis_select.v": "4edd7f83593b989afa14523b5cb379e0db4a2b755d9881a79ac48362b913ea20",
+    "adv_stable_track.v": "660471ffa14cc1c8314e25b5c10ece5315a18a57ed7e6ee78bc7d7b9fe59d343",
+    "adv_target_hold.v": "0827de8f669cb7c88d991f2c4bf857fb2587049c731f872f9223bb197ea7235e",
+    "adv_vision.v": "41aa3d40d90b620683d5048b00f7f9dde2dad83832f0a7764e68fa42ca9a276d",
+    "adv_frame_latency.v": "63ddef2add2d174ab0cb2334fb5091ce05b6afe07af2ded4e45cd1a09a3cd40c",
+    "adv_overlay.v": "24c4575193f957474f37a69e8595d4cfefc846c47528b9919be163b75f647fd5",
+    "lane_lvds_10_1.v": "a0e34a43ccd356c9b87447b62f7168b66ad95de145f7ea2dd3bf6fb8582900ff",
+    "ext_expression_preview.v": "07f11ddf58ad1cbae6c3c41108bcc3e0fc2502f8e43625efe5ad4195b2b56687",
+    "ext_expression_weights.v": "d6c5ae15b94493fb52ccce0c9cc0ecfd4d59f23547d304cd005180684317c67e",
+    "ext_expression_motion.v": "cb1fd1eaff63c9aa456ebe7fbf120241ed8cac7db141115dbe286bd700d6900c",
+    "ext_face_visual_hold.v": "2601896c36752626aba20cab5f17758979baf851c6c6ed7c081d79184d0007de",
+    "ext_expression_au_weights.v": "3189fa176da829d36fc25a1790dd3c1804b3a6d6ca61f35804a53807a0b33993",
+    "ext_expression_cue_weights.v": "d5782fc45c27f0734a9123d8821cf4f5bff85729ee34e91fa68a69effc88c843",
+    "ext_expression_cbrow_weights.v": "1b56db274d79d89b8fc712ba6865df98f21250ba0c0c1564cae4f9a471a8d743",
+    "ext_expression_core.v": "8cfc70d75df8b3dfd49ea59d68ec7d0aadfc6a7b5642703a9ff6cd3f0c1d7a87",
+    "ext_expression_capture.v": "228503efc8262e821370200e0b5e852c148acc9d94f15518d3543c2e99433f7f",
+    "awb.v": "dcacc2d777f50352d8993d90f55c0055e1b0e209723c1a91b1990d9af18794c0",
+    "ext_face_detector.v": "08fc2c79ec0292ae48718e8e966b74658bdb015cef55257cb910ba867c9a3057",
+    "ext_face_lbp.v": "845df1efc6303735ed5cdcd1aa1be09bfa756ef8202953bd14e1bb1bf8fe70f7",
+    "ext_face_integral_ram.v": "0f2126947a5881a79080663c06193dbb7f0a46bfa1754a4142b3b868ac35312e",
+    "ext_face_track.v": "3ae23bbfb202d990cbffc90a6ffa62b7990d50d9197ad141258f4b715a903e36",
+    "ext_face_status_cdc.v": "4cad69d9afa544551b3a8900c2d7149f9f169521a8d31bf7aa3226ec04d10813",
+    "ext_face_feature_rom.v": "d860176e4b8b133c467833fa4b20cf7b0ad960c7059307997c0f0721dd2b4d50",
+    "ext_face_subset_rom.v": "79997941f1189c04af5f88781a3c0ee83154d98525b4a83018c956381a4adddc",
+    "ext_face_stage_rom.v": "f7243ab1aadd76c584957581bf6bb39e7b340b1acd2896956740e03bceeada44",
+    "ext_chroma_scale.v": "56939dd702baec3e37929bc8366827b12a66c47a514b89fdb05bd74611b72cce",
+    "ext_line_ram_rgb96.v": "3118d9f86db12724dc44e444c1e3c2df9fc28221650f6cabe65f3cfaba3e30db",
+    "anlogic_logo_rom_sync.v": "8b7bc41b93bd1052be11c1d7f6b3db8c7b8dae3d0b94af01954c9e7183dabba9",
+    "isp/demosaic_4x_2_0/zhenghe.v": "4318cd1b70ee4f0632fab6918995f0d45bb2100f14dfaff2c92880f747f026e0",
+    "ext_cartoon_rgb96.v": "5725f7702477d2a97c1d1ca3a3d4da0bd00b9029c85f0330dbb05533d6aafe31",
+    "basic_status_cdc.v": "3c47c76e946febec56408c2a514ffbc8fccb3c1c3410b5ceb174a68b3205ca91",
+    "isp/isp_top.v": "d8e3e21c4eb908f039da1a7a69a6b70e186d7cafe19006295d43bb9efe4e7f9a",
+    "design_top_wrapper.v": "b292e5795783dcf8e506e3a6972984819e62f549887bba894b6f9bfe6b5a62b3",
+    "basic_color_restore.v": "0599927c5d177d4d8eec11d548e4c4022f356d798374ea09ca0b1b4e8a83e34d",
+    "basic_saturation_keys.v": "0574a17775f8b210e94ba31e861eea11076284d5d6bacb79c3d522c9d974c98a",
+    "basic_detail_sharpen.v": "f781ebb7d4a38ced77d3f8fc89e1920115a51768f75e8ce85d9e8cc3838d4c05",
+    "basic_tone_map.v": "4a762a3660bffd690afb57cbc553f9e25b12b1dc59186bbed11c16f4276d3b19",
+    "basic_vertical_denoise.v": "6b7a0f3ac578596fdfffb48f5e4ce8878860ab61d00c59750c8fd685ea9575da",
+    "basic_spatial_denoise.v": "885ce061c8bd4c64c60bc3d1f8c83f611831565a09ef89dcbd79f2877ca52121",
+    "basic_gray_rgb96.v": "fbf6f550848f4eaaf5b620449d77a27be77a70f173af9721302e4534d51781ab",
+    "basic_rgb_packer.v": "ea35c11db9f4fc6880de14e2d1d21cf6aa0de341cf622fd98ec3b18eaaee4336",
+    "basic_osd.v": "2fd39d85474a3637445367bc8b78563a0315fdf27af474e206762f2a57d6d7e6",
+    "basic_display_startup.v": "a7f77d6439203c63842b855c656511910cf75df8886fbf7a7f125236ad6e38d3",
+    "anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "osd_char_lib.v": "80269dee8af301d175a0b8ba0b0305149852916a3ed81082349bebc27feac311",
+    "hdmi_mixer.v": "3b466dc82f71443e857c9f13bc82a951bc566d90fd5ca3668f2776a3fd9c6fcd",
+    "video_out.v": "591ca44796510a9273d7d4374b5e2e4a6708cdfbb8d030517641e0674a751b7b",
+    "video_in.v": "ed4a30fcb3a19e4d5ca3dcd3b0dc98852a6054ddc55cc2b3da9f61e702639a57",
+    "basic_fault_counter.v": "9fe8f4510324717b6d2117e7d70e4427cac6ccb9cbe8da1889fed046e8441e8d",
+    "uiisp_beta/ae_set.v": "c840fb7b43f386d8a6bd2c27cd18223e20bf24c556113746eef4ddbc648a96f6",
+    "uics520_cfg/SC520GainTbl.v": "45c6e2867f9fcad17eddeb55abad62ed423663b03a0be26b4e41fc83081c8b68",
+    "uics520_cfg/uics520regAE.v": "c8930145298088ff75c3f0130b40e3f8fa801b2d53653a4bc7fda4be5bce4403",
+    "uics520_cfg/uicfgcs520.v": "5d54850155449ac71e3246f6d43b28a42c81cd142975ca8875a413227f56775f",
+    "uics520_cfg/uics520reg.v": "3f05b138d91dbcb0093398488dc48ee3fd60e892698adb3c21ed61dda60cb572",
+    "uics520_cfg/uics520reg_720p60.v": "91384bf77707db952970dae78e26fed7b157e8e167c905a7c8ac260767c8c5e0",
+    "uics520_cfg/uics520reg_full_2560x1920_30.v": "162f85e0f314b1fca4ed9577aabe9ef8b426b17dde06e732aa2ebb61be8ab8ec",
+    "uics500_cfg/uii2c.v": "032df05881f9bd7c7cf86cc1381adcb739a18f8a8744ed06b1160ac294a6dc0d"
+  },
+  "test_sha256": {
+    "tb_advanced_base_osd.sv": "c1deb9d12bcdda0c5c53c9521370e52655b2ac48a2fe043a20dd04420ca901a2",
+    "tb_advanced_font.sv": "fe99331a7f618e12608d6adf88fb04d34fd2127101b016dad9906a045a2a4a92",
+    "tb_advanced_frame_boxes.sv": "314c01918126d5d9b63242873066e254ba43bc80dedebb3efda3ecb90e7b5916",
+    "tb_advanced_hand_rom.sv": "bc8278c400347a4cb459a30db526adae68910b4a92d6d830b2b9a7fe28f8a2d9",
+    "tb_advanced_hold.sv": "181ea546ba2268e423f63d2f786106ecfdd47219183e125029c9a3194b097488",
+    "tb_advanced_latency.sv": "0c66b5419cba4bf3706257d24c2fb7be6726d93b14c552123346565948b130d2",
+    "tb_advanced_motion.sv": "af53559dd9708f8ad739c022b61c99f56f8d3ecd4dc538fbf5678b90c5e9fd2f",
+    "tb_advanced_overlay.sv": "63162a9197f648e371403e5104853dfb70c9633e07d15e207aaa5f55994d14d2",
+    "tb_advanced_ui_preserve.sv": "ec15a97da5b64b5aace923d66dd3f631f06c6412f7a7485eac5c02e4de361ef9",
+    "tb_advanced_v2_axis.sv": "2c7e6d70b2e6cde7c97e553c8d43a2952e7a6466b6b1b5f84f12bc339b02efcf",
+    "tb_advanced_v2_pixels.sv": "1be16d574bda267a26d9497b0e06ef22b26530de1b866463a9ecf239ee93cb43",
+    "tb_advanced_v2_track.sv": "5167cdacf53babd110618e82e77d0c37965d53401b4ea33dd7651f4ecbb5e6ef",
+    "tb_advanced_v3_ae_i2c.sv": "bd27ebcce2120ca6389adaf12e5f61fd5fc348fbb0ec5f3845734e69a2644135",
+    "tb_advanced_v3_auto_exposure.sv": "1275e46c450f3ebb252c69efb8626c71f05effef7bb604123dac91d5f952a275",
+    "tb_advanced_v3_meter.sv": "a802aa9a726ccf5ba21cae1c2845d6216974a84e70c8a3b1a64acbed96ff9808",
+    "tb_advanced_v3_ref_track.sv": "b3e722076098b26398e4469d7b031d2d915ef86d3a21793d70a8b6ee23f5fd28",
+    "tb_advanced_v3_tracking.sv": "88b4c11ef1e6aea20798ad937d1a94d061d96ec2cc0f5350de7d2afe80e442de",
+    "tb_advanced_v4_auto_exposure.sv": "bbe8fbc4d18c4d2a77911eea03bcce0ea3e6fd8c2e9971b538067136a5582853",
+    "tb_advanced_v4_pet.sv": "7f669199787a9a21d0a15ec504d66ecacf03af776064b74b6cf794b9ec0a3765",
+    "tb_advanced_v4_skin.sv": "57abbaa5509e392938d5962476528f2d20b64d9d5f8f9261db229512662a4627",
+    "tb_advanced_v4_tracking.sv": "a95df50ebdf1b8b227283ef3d4c27ab75391a9c338fd74027a71809cc4b0d3b2",
+    "tb_advanced_vision.sv": "98c3d1502bfa19f4fe017672745ac7f116a77fcf42fe13004c90edd82e740902",
+    "tb_awb_frames.sv": "ae5aec4fb8657aa0e8836f2ffbe2786c5ae9a8e4e180503af9b9d864405f3f40",
+    "tb_basic_core.sv": "8e2c9c5d4696948b3489c447f4f06ec7c4576f3ac862db64bc73dbce2d3b2094",
+    "tb_basic_osd.sv": "3045c162eff5ee7344e2bd60cbb38481e34cece403c26d9d789a23b518489136",
+    "tb_cartoon_core.sv": "b241ea936300166eafa8bddbfcd1007710ab45b5c4da50b94defdf3f8b684edb",
+    "tb_cartoon_quality.sv": "a7d355c5d37d23d86e5d019156f77989deb173bfcbe68bfc836dc41d875b63a5",
+    "tb_cartoon_stream.sv": "5fe338e223a3bfa7ac431ebb7b2fcff8587ff9971ce71457b87ed8453bcbbf95",
+    "tb_chroma_scale.sv": "ded9e3ec86541ebf83627e541ae1483c2ac17120e3f6e4fa1f690833337b14e7",
+    "tb_color_stream.sv": "19b0225a1cd36c5c0c4a7f2829e7cffbf2c38a6c508a5d76e85a803a88578d38",
+    "tb_display.sv": "8b43e56d365b589d6b62c9cd7e2270f97c3944fe22a27a373589e24659ca1a93",
+    "tb_display_startup.sv": "40cb103c0263541ad0bb7834a56c77d31a863dc686f19377ca898321f75cde28",
+    "tb_expression_action_policy.sv": "4145ab911bba4bdc7433ad405eff2422ef405440146e89afef529e7eb36ef2c9",
+    "tb_expression_au.sv": "cb59cf4118fc982071a14dff0ee5f3e0bb2508545c280ff2d189b109cfdad615",
+    "tb_expression_au_limits.sv": "8458c6b28e67b38e24243e987cb5765d2292247e1bbf311535f96a6ee5b01db9",
+    "tb_expression_balanced_other_m_pipeline.sv": "77028978f4720fb4c703cee177c6acbfb2b0b1dc32670d2ba55c9a3758bcf343",
+    "tb_expression_balanced_pixels.sv": "e001a288f874fd8f3725f5065ee91453b75dbbea4da817f731d44b44a4fa5720",
+    "tb_expression_balanced_temporal.sv": "027e272d53d570cb8c6abb6ea64632f80543e32bb1c75b77d3c7f90fe0b99b41",
+    "tb_expression_capture.sv": "89183c8a6e87e57774472d15d6108b61daae99f289af2f911d451eda497ad962",
+    "tb_expression_cbrow_pipeline.sv": "24843cf51754833386ccdcb806908e14a03389c797c6a7df40c1e0e9f699c31d",
+    "tb_expression_cbrow_pixels.sv": "4dbc641e2dc4544e4a267d7d00568b9b7cf31279a94282f79343d8fcf5481cf6",
+    "tb_expression_cbrow_policy.sv": "190c7c7aa993463545dee698025a280b6c413c5ea33de8da61c8a640386d5c6e",
+    "tb_expression_cbrow_temporal.sv": "f68b790ce6f891bf5334c2a3a15410caeaea1df04cf78d7a06ff16353963b60d",
+    "tb_expression_cdc.sv": "9cb7a3ed603965b1a6bf8b87f6f5be371795c2f51c43c03e128edebcdf66fef3",
+    "tb_expression_coast_profile.sv": "ea2f298247d2a64e44e53fa3ff565e99044905773296972c0271b9b07fffc607",
+    "tb_expression_compact_debug.sv": "79f574ff46a26b7cca74ad851ca486dd23283c80dae23d0162e5ce85030be2ec",
+    "tb_expression_confused_limits_v21base.sv": "c0d7120886c013557c42715699a8c15bf65c01f2571dbb0591c0b24def3df83e",
+    "tb_expression_confused_pipeline_v21base.sv": "68ae037252327d80a996c2a913c645bee23c86214c7829a1a979f07c5bfacf1f",
+    "tb_expression_confused_policy_v21base.sv": "98750f5605044ebbd6854140d30e19fa603f82ccf875f68e6eb0f77f3fd009ef",
+    "tb_expression_core.sv": "b7b70ce62c71633f2e3afd3209db403382afd867c61e9f10ef339c643064a283",
+    "tb_expression_cue_limits_v21.sv": "b3004088317402fecfe1df41a2686ceed19e4732793aed5d7b524378c07e5736",
+    "tb_expression_cue_policy_v21.sv": "a0ee85ed9f44d5f7923c7a7ea8f506e41ee3be84a067e42ff5ffbe9bd659144c",
+    "tb_expression_cue_v21.sv": "c721db1c3475d1d5a5ec87271a2816faf45b93398f98300f1376172543069b80",
+    "tb_expression_debug.sv": "c4fba24cfd5ab2c0944e41fc10ce1965be50ef3806eb0605222c383fdafdc5af",
+    "tb_expression_gate.sv": "d4c2c819fd98aba9d37f29517c6fba7525afbffcd4482252676780aa6fd4e233",
+    "tb_expression_partial.sv": "ac37ed0b7e7c92e546fe537072b9e9a350f3f19d98ab694679864eac5b6ff0c1",
+    "tb_expression_pipeline.sv": "cc0b6730f9e5dd1f14eac49f19daa1f3b5e6c82bf8e896638ad4d1e267f9a99d",
+    "tb_expression_preview.sv": "7bb5ea196888c069887e18d6e834aa9dfa5eed6ec427763d959649fde6944401",
+    "tb_expression_priority.sv": "c051d938ced84d3a2b6b07ea72ab87f2f2c35b76b953b933f5d91ab2bf7e908b",
+    "tb_expression_responsive_boundaries.sv": "95a2d72ee757376e65290c0f3f52c083ac24d0521092c323b6e7f9db7032faab",
+    "tb_expression_responsive_history.sv": "0ecbe9e92c5c5f1941b6ce0691f5a688359efd776f2d829297283d49690328a1",
+    "tb_expression_roi_owner.sv": "2d0764a05cdb92fcf52803b32259f97055964cee5a14f83bc041075e6c7ba9da",
+    "tb_expression_roi_status_cdc.sv": "a90f7f2cfe093651da4f99608685affed522c8c1a47fabe80620cdfe8bfedda0",
+    "tb_expression_temporal.sv": "c417980bed90eebbda662a9537524247a097bfc6f1c0a6cc342c6c4544b610d3",
+    "tb_expression_temporal_v20.sv": "a8bda6ee0eebc6f90e233de1c5ab1e09072db2f10dff604a27f5ba375a147c4e",
+    "tb_expression_ui.sv": "6d70928c854a9afcca537a2ca0b7a178c10b28b5cee9af6fedd034541a00d61d",
+    "tb_expression_v21_equivalence.sv": "73fb6d7e4d76714d3c48dd6e89a78859c63115765bab59180280c634a5fd02e4",
+    "tb_expression_v21_temporal_equivalence.sv": "50ad332a449f4ffe1b74d8712ec1f2fb73ef47cf08c6dea75c35d81755f299cd",
+    "tb_expression_v22_sensitive_pixels.sv": "2638c3cf45e090e659655eaf3e31d09f9879b64860dd73da8f97c597f91c027f",
+    "tb_expression_v22_sensitive_temporal.sv": "f216d3bd33813136dda47a01ac8d999b5bfdbdbdde848ede74c5af98a15d89f5",
+    "tb_expression_visual.sv": "a15793a34a24a8696138910fbf7f0be0836ef824273479028bfff9cced21b4d1",
+    "tb_expression_visual_pipeline.sv": "d35d70b13d3c91786afc4666af4d702c21baf245b29c9d2d1c2ebb490ddeb6c3",
+    "tb_expression_weights.sv": "0120d88409dcbf9ce305946ae1fcaaa8a7d51e6df8ec86d6ee028b94c846b639",
+    "tb_extension_mode_boundaries.sv": "de44f610362f0abab353ca8b7d621eb5b7e9809c0aea24e4a1e4c738d75a92f2",
+    "tb_extension_mode_core.sv": "72b718de9b4c0fd7512d9edfcc72da05f7c6b2061856556896e36d90001677a7",
+    "tb_extension_mode_pipeline.sv": "524cbec3296e5ae27b5ccefe4c60201830ca7d04ac182b5aa8a8bc178dc1377f",
+    "tb_extension_mode_temporal.sv": "9730c2b83559019f3ac3d9039c6cd5b56bcfd7e20861a3d5b931680c5b8a5b83",
+    "tb_extension_mode_ui.sv": "14a35a039a0b1a0605196bd4cd2cc66818b762d28cc8d1cb56591f7a045a9a32",
+    "tb_face_capture.sv": "e88dd410cc9f1c303a6d699970f44307bf71c19a2d57abe1fff7530cc40a3c0b",
+    "tb_face_enlarge.sv": "d794e57298150382d3b3bed6ae5bcb5c2dc0c3028684683c7ddc8e092adc7c46",
+    "tb_face_entry_sequence.sv": "ab5f7886a87c0ff61cabe38ebe6abab8bf82c2dd2397d01a54ab1042832f734e",
+    "tb_face_frontal_entry.sv": "2a929e0527b816846860227b590e0935d14b7410fbe64efe39e167a49881811a",
+    "tb_face_glare_schedule_v16.sv": "f9987cca48a9fba122f56b683674f3b2efea68f5058175032cafe9625253e3e4",
+    "tb_face_highlight_retry.sv": "01ec360e904d0691ef65b2f48164753ed7f4603df1f8a80b61b40377605641c1",
+    "tb_face_large.sv": "05371797fdf021e0e2579cd82a088ba7c52512bc894d841360a75398d6d07561",
+    "tb_face_large_entry.sv": "29a680df86434ed96c5fc78e8ac5874f009d2e5a5afbef6101e1c94870268261",
+    "tb_face_large_policy.sv": "6c5ecc91978c205763f0597b5364548f99b82fb9c9b26143c8e3171168fc0f90",
+    "tb_face_lbp.sv": "5c60572c733850490b7279a748f82d315bf7ba9b4b3947d853a7b0c385b41305",
+    "tb_face_maintenance.sv": "75273107528dcc87d1e298b9ee10636696f1554d85ccbd87644be1b3aac26585",
+    "tb_face_model.sv": "3106a176911b1c0a424ac9f79f4a8f8d7d132266548abc98bb469036a881c6e9",
+    "tb_face_near_escape.sv": "5f256245957aa22be7d61d45a2590bca95d82290ba7a1c1b8c6a698aed78782a",
+    "tb_face_occlusion_v14.sv": "c97352ad91254fdc5789a959b9cb3205d0f102931c2106a7f8897b86baa2098f",
+    "tb_face_overlay.sv": "991e49728971b34cab5da58d4729f650ac039915c08e543bd33440d034413793",
+    "tb_face_pose_probe.sv": "1c5c3b70c5b813e299cccbf184cce6fe138b031de1123e3a6f7570f5b635172c",
+    "tb_face_prefilter.sv": "fc14acde14625b516c5edff77524eda868a35d154cf6ae2fae16a5e37763bd56",
+    "tb_face_priority.sv": "2f6145d970d8c24067f9f20a7c416e775b8df3a5b50ce0c0b27cedcd838a2af5",
+    "tb_face_profile_entry_v14.sv": "7e689992606f018c16912f845e61ab3d7537a8bd36cca3f1a52dd52cefcd40fe",
+    "tb_face_profile_hint_v21.sv": "f23c8793d495a1cdd3bf74f1386de8eb6fc4834fa3885e6d6fda69e2b11ae7f4",
+    "tb_face_profile_phase_v21.sv": "c309fd16d3a75297b533dff50d0ab294ad89b8265db3b0e1f491d1c024ef8e29",
+    "tb_face_profile_pixels_v21.sv": "f4aed52c92a088534cf98935d94a981e9a6985494b28c2f25dce1f8ffdcebb01",
+    "tb_face_profile_roi.sv": "60bb96f9ed91bc832686861cea69191ab65f4ee39d730bbf429de45a24e2b1c3",
+    "tb_face_recovery.sv": "a8d6ad4997b7a190ad6ed0b3c2528fd4d4bc400acc7d5865a22516b3a63aa9d5",
+    "tb_face_roi.sv": "b59fcb3449e997b976961411070acc0aa8cff315231eb3ec99ce97729c20a7c8",
+    "tb_face_scale_anchor_v16.sv": "0ef014f16a6a5c81bee3e67574e84c0f11ccd063c81dc21ecc839cdfb3bbf9ca",
+    "tb_face_select.sv": "43458998b5018db846b8ab4c1820dd63f3b23036a7a35e8844b9b441577200ff",
+    "tb_face_shrink_guard.sv": "16c928a4905f7aca12445d86beb881949ea30b788277f5e18f3e4a3c664b52ce",
+    "tb_face_tiles.sv": "480ceb49416a585d41e8cecb3651b83f179a92ede0079201b273df165b12e417",
+    "tb_face_track.sv": "24e0c1ddcac8242a59923a1f180c77ed9931206070b7cd4d4dd60766016a17a3",
+    "tb_face_weak_profile_entry.sv": "7e3be88b3b233f8a907ceaba51097368e149b97c65542f9c5710c4953b80cf78",
+    "tb_face_wide_refresh.sv": "315c2b2d15a2894337c3817aa5e02ab7c5cf60d5d5eb1d0639d2587365b55fc9",
+    "tb_face_zoom.sv": "bb26e930cc4bf2e21cf375a8a0669d7b264b58a34c5afc61a450f07630600009",
+    "tb_face_zoom_policy.sv": "bc1a8af43a3cf07ff3eaf02d94f3d2c3d7d21e78ffb85c97b87583acc1d085f6",
+    "tb_fault_counter.sv": "0072560ce16d60b406f41c46823928a87342dacb9598df66a403c1717ec7406a",
+    "tb_fault_events.sv": "6e6d1df805be3e457316034146cf11aea20f3eccb46656e5e6f0ce87c5335937",
+    "tb_gray_rgb_exhaustive_v16.sv": "2459cedc02cf3e7941e79aab7f319316fb0f0cf41726a196c2f9430522641571",
+    "tb_hdmi_serial_reset.sv": "602ef1158b0cfbade50f722628d9d044d907084c8986072356080dada72fcdb6",
+    "tb_i2c_diagnostics.sv": "6ebd2e3d21c3e5dba2809506873d6c6026e6f6db08f03a5b78598c750211d903",
+    "tb_logo_sync.sv": "37e64b0da3bd6797facfdce5ba8f8be6f2d70ea18d7d60ad34e7bf9a07c4e8c3",
+    "tb_lowgain_ae.sv": "8874bf9c0aea2049de75356c4420eab82b64c6b8208cea0ffd08b1293cbecb38",
+    "tb_saturation_keys.sv": "c80de97238e9da2fef22029c992d027efc870a9cc920fe52558adce483719eaa",
+    "tb_sensor_readback.sv": "367c2668f2d59642e523f475461672ddaef10a9debb5d43bf6f8ce3ddfe66cc0",
+    "tb_sensor_startup_retry.sv": "6e4cc3eca320731f4c857f10059ef0249458744ee1be1f6696001b0f06a71f73",
+    "tb_spatial_chain.sv": "32564e46f051693357884c72adc81351a7a14ffad077bc0858067e9ea1176afc",
+    "tb_tone_detail.sv": "0ef6167f2b318c172a398d8987f9c176400d65e23bfe5deb1d408a76d61cecc7",
+    "tb_video_timing.sv": "4e43535150f7d4d994103d0f5382d339d9ec8bcacfb9b71041ea5c358d6cc4f0",
+    "tb_zhenghe_hold.sv": "0a6257dc64ff808bc9d070476fb5529e7ee3b8b77643d69c8f430e8b8ca61980"
+  },
+  "simulation_model_sha256": {
+    "vendor_eram_sp_model.sv": "4db3063cc067191741beb69774289ff931ad616224c2bc1ad0b319676ae9bc6b",
+    "hdmi_oddr_model.sv": "274ddfba390d2dfeaa44220843946ecc3a7724971209bf2a6660705658233a88",
+    "legacy_lane_lvds.v": "e6b2a21bdb09454818e58a9ccc93fb2ace0b16c293a77304eb0c3f6d35e142f1",
+    "v21_expression_core_gold.v": "9fd9f8567097351e5c0f251cb98f58c8c24b9a7ca0ee46bb90dfcdf39e31bc9f",
+    "v21_expression_capture_gold.v": "4a1456ac19b6b2c8e36fda840b134c86c56ee48a117ab2b0388b77fd51449615",
+    "v22_expression_core_gold.v": "034f926a4f29d42b7bb88a36d71b9d9ea84c1b8b9cadc4e79f04fe4cda1c1052",
+    "v24_expression_core_gold.v": "3026d3d85ef7b9e3889d992f2172b3197d0db25c2744a55d20e9c65c8f4f2e4a",
+    "v25_expression_core_gold.v": "cd20fd6d91fbfa8949fe004e75fa3ec071ab0f87f16967c774b0362d879eccf8"
+  },
+  "reference_sha256": {
+    "build.py": "a8b6875d9aa331c0bff01874fb9c92d621febbd012cca11001030595c9cea9f1",
+    "build_extension.py": "a5bde19a46dc703f106892bd447de6bc24fb48030c6220cf0c3dca182c9569ca",
+    "cached_build.py": "ff06d3bc8ded18b205b609a3998524d5557aeb623eada16f47968d84af899b1f",
+    "face_reference.py": "61d75072706a6224ae1dd3beb37caf0cb16a9f2f777b74adf5bc22c4ef4b56f5",
+    "generate_face_model.py": "13f0877d710b85d0bb8a46fdb0136e4d10da937b3aefc6fc67acae54f2c80c01",
+    "generate_main_weight_stream.py": "91b5bad3cd86dcc92ca9955caa43ee1dd04a622681d794636765a319d21206af",
+    "stage_gui.py": "3a985fccb83ad65fc5d4a1cad4568a4988b4293e26b7ac6ef924a83cf2869897",
+    "validate.py": "216a8ad63eb0b3e8bb7f4f37e36d3bd89e6bfbd1833cf7db0e0cee2767879c54",
+    "validate_v4.py": "2c8af86b5e5150dbb3158862dfd144ff89f28698470aeaed17e057db41f75677",
+    "verify_pet_assets.py": "940c1cafe9e3671d71ddda010e63e0d676943ac2043a9d4597c72d2b324c74f7"
+  },
+  "asset_sha256": {
+    "models/advanced_hand_v1_baseline.json": "859fdea265f6d98a6754379772598ae6239b47cc40a95976535cfdf17401185c",
+    "models/advanced_hand_weights.json": "d38d61161c09912e12b088703c8688f7b1ac8d27f342f71562fb2b58439e4645",
+    "models/advanced_reference.json": "a881ac1283bd8ff4bf5cb84b8b22343fc2ee71bfb26d339c0aa213c0e34e05da",
+    "models/cascadedetect.cpp": "452bc146c6b7bcd81625502d344ba2e0a473e7cff6215b3c738045a1fff9d45c",
+    "models/cascadedetect.hpp": "e027e6699845f7e6e402bd9c5c24898d4d97c3c30950a308fc57e53be28fa08e",
+    "models/expression_action_policy.json": "960b2f064b7da3ef36e25bc3d54a3a774723fa03492394da396709a121500051",
+    "models/expression_au.npz": "65263a33a5143e5281611568edc3ac5c1324129f2a0e21726a82fe710efba2db",
+    "models/expression_au_model.json": "f0dd2853b19d0271b4c5ae7a6654ba700e1ce90b22ed5311f8c55e4f8e0db516",
+    "models/expression_balanced_policy.json": "ee9535171ae028af1b6f88836e1dfb426f68bbd8c10eabfb749f54bc98feba05",
+    "models/expression_cbrow.npz": "64db674aeda37eaab52c36ebe0d868e46c6393d4600f20851290c1f1b3f90e37",
+    "models/expression_cbrow_policy.json": "e4ca808da0eac49b6292c2ddee34a0736b12e20bae376c1143b509f7384cd825",
+    "models/expression_confused_overlay_policy.json": "1c545d3813ee32c8530234775e609da9ca05df50e5e29027fc2a4d09f506a460",
+    "models/expression_cue.npz": "858c61bc01c3e2060e368c672bc7498e7ece138dfc362b9bbebeab97fcc1f791",
+    "models/expression_cue_policy.json": "26310a33cb616b3d4a8029c66b0f8f9dddd9036e85aae5b85dbf910cb755ada4",
+    "models/expression_main_weight_layout.json": "ad6aceec7cea0788df9fa5a18580de28753e01e5dbd781c514355d54b5747a29",
+    "models/expression_mlp.npz": "9ba73873ddccc247702a592fb9254c8dc76db05f11c9a54b569a1bbb07afa493",
+    "models/expression_model.json": "7ae8343dc6f5b6f4c1e5bb9fd641338643aa15460c2d08971b9f34dfe6de676a",
+    "models/expression_mouth.npz": "0a2f78058d86c6ca10a3dcbf62f0ad42123e1a8719cf2fcb42aa01f9265754c3",
+    "models/expression_v22_sensitive_policy.json": "bf2f531cb76a6336c8ff7749e406baaafccbe9da7149262eae01cd7ac1dd0f8e",
+    "models/extension_mode_policy.json": "49b83cb3a0a3b05034b09997cf66916ab731e07b66161197ea7e3536d6b64edf",
+    "models/lbpcascade_frontalface.xml": "6f5f20091b0d20311c929bcd8c927074e50bd0ac6424321016c679f43cf5ebcf",
+    "models/lbpcascade_profileface.xml": "076359afc4ede57e4507f6a6bb5e5c0cbaabaaa41ef514b5f98d01c1bd1d2fff",
+    "models/LICENSE_FERPlus.txt": "e9d873074f826f2b356b4141cf9c8423b36e257336787600fe4bbe5f5cc2e9fa",
+    "models/LICENSE_gesture_dataset.txt": "66fb7ca4edac2c6b00edff0fe2f284c54e16e3a5c30afcc6843f44bf5d57cf96",
+    "models/LICENSE_opencv.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "models/main_weight_stream_template.v.in": "95c8ab289f7878ca933d662bba0276433cdd4d55a29bcaf975f92d67cca686e9",
+    "models/profile_fixture_source.json": "603ad6f919fbe41a5482b3f00141b748b5c7e47cf7fc7bbeda9853fe0ad80575",
+    "models/profile_source.json": "bd50f4d2556fd5a75a41ad4b30fa38d2f779b2196284dcd23b20034f956077f6",
+    "models/sources.json": "76274de7b4419c4dff9429eb39e2ada65e53a5daaa58200515745dc36be0d523",
+    "models/SOURCES.txt": "15d1a2565c5a7ded780b37d6376285ae5b6c16c9c38d35055aeeb79bfefabe80",
+    "assets/reference_target.jpg": "d1506e585d1a660a346048dd09680e4101fa4241d799ffafaa0c90b5b3aea235",
+    "assets/pets/happy.png": "1034bd813bf8e7564d9fb3d0df5401f307a7f9424e3b1acc651aef1e73241b77",
+    "assets/pets/nervous.png": "64f872c752a9589e4a6a9e1fea4d7c45436c655662f94df1a13f8e6bd3e40965",
+    "assets/pets/neutral.png": "a73e65ac8e119f27325ce95c6454012ff08efbf8768a201ce97c9d731ffaed7d",
+    "assets/pets/rice.png": "9797c255ee7c751f388fe606144db19d939189aa0847cfbc1a142ab72d157ffa",
+    "validation/action_policy_contrast.hex": "45334c50d075e33acc98a7b774688486de8f1101fdad53f17a073aef1a560fff",
+    "validation/action_policy_count.vh": "1ddc507195b795734139f5257f21305d5e6da03aa5728fa9ca917832e4867327",
+    "validation/action_policy_debug.hex": "0716d2cf34a65dc59f88db2d240d51ace0722d378c426429e5c2f7b7d3711028",
+    "validation/action_policy_labels.hex": "268366d8194022ad9e42f08dfced7262ae6bea85ecb9857a64556ee85e449314",
+    "validation/action_policy_ori.hex": "7b258285f0a4cf45ef24b56e344469ecd8e49cf3006abdb4a584dc8a335322c2",
+    "validation/action_policy_raw.hex": "379516cb90cb3bfed0f94b97f5584405d5f01d0d87fbdc70ab65f8df3a7cbf8a",
+    "validation/action_policy_scores.hex": "67a65588fe1dfbdd19479eecca83c6c5fd63109b0dd25cc6d598b711b78af25b",
+    "validation/advanced_config.vh": "994e21e0b1ce6effcdf7e915340b0f675b1ad3fb6d7874db90eb64861cfafb65",
+    "validation/advanced_expected.hex": "28e640b89dc95cc606c80a4af52a47bd1c61f891d9e95029ab4f2f2c77ab4565",
+    "validation/advanced_frames.hex": "1033f461dae7b42665b6cb847a6e7665942d3312d602c1de5acaa6d29446f2af",
+    "validation/advanced_hand_bias.hex": "0806c69d86d975824625d0864628e1ae1bf4231aba4e1a2c0d70a78f6a86b7da",
+    "validation/advanced_hand_coeff.hex": "9e1ede67c6f4363b4eaf2f44da9816ccfa65cc8cb7021bba289fc27414f0be5e",
+    "validation/advanced_hand_head.hex": "6f71db83470709a885840f983692c379165fdb59b17fedb372559f46b39d4e58",
+    "validation/advanced_v2_config.vh": "5396cdeffd642f3070b0caa99faa60c8956e3f272a5fe72bc4a6bcc36f983746",
+    "validation/advanced_v2_mask.hex": "95eed106d3bf9875f7d40e6a2d66c325a25405bb2a0f9da4695706007d8f5db2",
+    "validation/advanced_v2_raw.hex": "9b8f4b63aaa54d3e4ff4bdd5bfea0de78ec8a32f8b2ff7dda584d7e9b39cc1ed",
+    "validation/advanced_v2_raw_expected.hex": "78783efa3e80ff02cdb2e4e635fce24faf45bae26be034b665fc3e5c35555f0c",
+    "validation/advanced_v2_score.hex": "39648288679ea1b2e31175c49ffd2a8c47810ba3b453052daa627c2316aaaa31",
+    "validation/advanced_v3_tracking.hex": "1ab61b74e64e59d069cdc0ef55b8bc64afe400cf1f1854227b86ad0a71830a38",
+    "validation/advanced_v4_tracking.hex": "7f1776b494040d4f92df5dc31773b23cfd785b6a75dcd94c63ff651c98f41727",
+    "validation/au_action_orientation.hex": "8ee7f18722dac3080b4b28f4fd1993641d15b1829a453f2ac234949245b8a29b",
+    "validation/au_au.hex": "4a853f47e17b2332142b9e34a07ce3447f8db488687f89f239931004aff6b189",
+    "validation/au_hidden.hex": "a19e69e9963126eec86f75d083ff7ea9d9628b43ffd239bd5015c986d044f008",
+    "validation/au_labels.hex": "201e0d2ed710d62c7a8ccc552ce9008d88a25ad33567ada3f377352444737062",
+    "validation/au_limits_hidden.hex": "f7d7cfe7162fea93b388de4bf70f9842b57fa113bbbda21975cadcef271d903b",
+    "validation/au_limits_scores.hex": "1c0630e2bb0149caa783253be3ff6834230452fc401582b10d72bc1abe74eef3",
+    "validation/au_limits_tense.hex": "f7c78e1725ae994eaecefb24be81bd9eff65e8be86dbbb68fd7888829bbf19ef",
+    "validation/au_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/au_orientation.hex": "733771f76f73e61faf95d11bccfc089eefbf385b38e2b2416af3a4aa53803175",
+    "validation/au_orientation_scores.hex": "ca1b3de1090af1b6f16ccd714f85a4e8bf2a68f51128d31279be865165cf742c",
+    "validation/au_pixels.hex": "ca5bbce2fe8362498d6deb19caf04d4062c7f8e434dc4254081ee7ec0547f27a",
+    "validation/au_ss.hex": "1b666c4baf2186b5284ba3504f03e133af14646a8e228f5aa00d0858a28a6c7b",
+    "validation/balanced_action_orientation.hex": "0f54fa9cc4125c549f0e02f05d4957623ba511afa6fbbb20b6867e8b613f0ba7",
+    "validation/balanced_au.hex": "8cc1e24c94c3551002c3aed18c761edb55ccb92e4528e6d7dae2b4172a04e49b",
+    "validation/balanced_camera_pixels.hex": "a1ffbfc087ca364ab31408e558282d0dd53411852036ff69685ce4ccfd580316",
+    "validation/balanced_confused.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "validation/balanced_cue.hex": "e34b48a330107bd2d84be04b3abe64b11d098226769ae7faa6c0553ac8ee6bfb",
+    "validation/balanced_debug_byte.hex": "b46c428f2b6b40d9b232ee272a53adff387419b6da54c3ba7617b4c16db5ffc5",
+    "validation/balanced_labels.hex": "e9a850acd9900a33cc0cf7eda59e379b346f9d6815afeb4c23ce0b3a69da16db",
+    "validation/balanced_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/balanced_mouth.hex": "1415441930387b8a547db761b1f462a8619c5ced8ac92fee8a5a233e3054827c",
+    "validation/balanced_mouth_partial.hex": "ebcdf72cbbb90de0f25c3eb86032b167e8cb4007611438902fce8ea23332c1ea",
+    "validation/balanced_orientation.hex": "69ff6252f7191b2b85f02a849cce5dde67799b1c77569375ee8f4bbfdf6745bb",
+    "validation/balanced_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "validation/balanced_policy_brow.hex": "f51517e002057c6d50561abf7ebfc2a943b42c34dcd6d50b766409290b3910fb",
+    "validation/balanced_policy_candidate.hex": "9bed514677a3ecc541a094ac13846f0957c766f9e7bbead32673265c3c9b59fb",
+    "validation/balanced_policy_contrast.hex": "752aa8498ec3f0656dae844db572a5fab61fa379e7d7053ab2a3769162d9e1b9",
+    "validation/balanced_policy_down.hex": "a1795694dab38af5dcd726992d99e24b4e5a0a1731eb7bea766880a9eb6ea720",
+    "validation/balanced_policy_label.hex": "7cbd766c97209f606a5944e3fc6107b886eb2d0f9996d8803cd03d092fbd78af",
+    "validation/balanced_policy_mouth.hex": "fdfb27a5e43e3638af40b514a2583ef8ccf43dba9216409925e1ce7999844e1c",
+    "validation/balanced_policy_old.hex": "344b06533b031b42cba8a5383909d70be3dadc1d40fb803a571287f9e73ba3de",
+    "validation/balanced_policy_orientation.hex": "db04f7932c83c533f6744b2ee866f8c8f512f143a770cef96d6fce7ef1964562",
+    "validation/balanced_policy_raw.hex": "63febc836dc5a0982922cbe8b1f160cca19e9b30fc93df3cadb6d6695459b117",
+    "validation/balanced_policy_smile.hex": "7339c5a8fdd9767dcb5cc2f9a784841640090cec010ad92ce75295485fcab232",
+    "validation/balanced_policy_strong.hex": "50e58253f5fa31fc082ee3966a0147d83f0e7cef63b1fb994ff31f2a14b4fbe8",
+    "validation/balanced_policy_total.hex": "ffd9b33bc1157f17018955114c1ab7d4ef832a2664ffe51159a0bb9274fca550",
+    "validation/balanced_raw.hex": "28f0660eab597e772933afeb9e91e29c3aece18ff67a1cec6d2af3545542e793",
+    "validation/balanced_ss.hex": "11c151158476bbfcae9dc6b41f06b170e6403e252412e42320ead8be274b60b0",
+    "validation/balanced_strong_r.hex": "6c49b5d7c290505ee01d90b9bb4deb1d3c108abb9f29c74579eb861cd170e696",
+    "validation/cartoon_chain_color32.hex": "e0a36443e5f8f3191b5126abd277b1367c9385f37b49ca68f8d52f70f7afe072",
+    "validation/cartoon_chain_color64.hex": "d3adb788b48f0f3be21f1272fe31c1775c8aa8611198c4a93b796da04196c164",
+    "validation/cartoon_chain_color96.hex": "324338d2c38fa269767770c528190444536a66e52a7b1f44beab7dd401f982bc",
+    "validation/cartoon_chain_expected.hex": "b1cbcf5efa3b09332202583226a38e8f590d2efd91d0d6de8b28301a53e68afd",
+    "validation/cartoon_small_input.hex": "5ef051bba37da9c3dcf0cb3f6130ce6be9f5b7c62464526963bad7166092a238",
+    "validation/cartoon_small_mode0.hex": "5ef051bba37da9c3dcf0cb3f6130ce6be9f5b7c62464526963bad7166092a238",
+    "validation/cartoon_small_mode1.hex": "c847eb2a8b0cad2f0a86c6773330d9f9ed30b46f6a2d853ecb8a988829793fd5",
+    "validation/cartoon_small_mode2.hex": "f1d5773672be911e748a77ae0cbc3819f2b411066f6ded8ca9daf884a2f7d6da",
+    "validation/cartoon_small_mode3.hex": "29d28ad2dd6dce3fe08723f98e641dfe169a9543c1a713eb07d23adddfb2b576",
+    "validation/cbrow_camera_pixels.hex": "a1ffbfc087ca364ab31408e558282d0dd53411852036ff69685ce4ccfd580316",
+    "validation/cbrow_cbrow_hidden.hex": "96895b705b05558193d69828122ddeafa8cdd92d939d31a806fe7dc8460e4ab0",
+    "validation/cbrow_cbrow_scores.hex": "59c54304b18d2814af8ce1febe38b4edb8973392860afb5cb9d28a5546bdd906",
+    "validation/cbrow_confused.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "validation/cbrow_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "validation/cbrow_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/cbrow_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "validation/cbrow_raw.hex": "28f0660eab597e772933afeb9e91e29c3aece18ff67a1cec6d2af3545542e793",
+    "validation/chain_color32.hex": "fee97a5a7ff360f5b4da97ef1572ea61bc26c24398c48ddd0f57f495b576873b",
+    "validation/chain_color64.hex": "ecfb07750dfde6c50a149133c4e6f06910f5ed211b9d0ccd296e52d03bab99b5",
+    "validation/chain_color96.hex": "ecb9fe94f4fc7f04aaf7ff58a0d89e0aec6fa3d0bc525844604c9c3c5311dc97",
+    "validation/chain_expected.hex": "76b065eb5fb94fe43b1f52e6d9953d9abf7ef37bf0669db5587b3ba5bd9ac127",
+    "validation/chain_input.hex": "ca56c9d9b1488990a8d26cae22e175dbe9131da3ffb5e1f217c90c371d6f35bc",
+    "validation/cue_action_orientation.hex": "a63b54df984c0a62893749588b6b7504ed7fd12328f17868a2b214a24c8fc9d8",
+    "validation/cue_au.hex": "e013c10eac39c56c637a24873bd660159b7ffdc3444575891157832f91d9fa0a",
+    "validation/cue_cue.hex": "6f8d1d0a670710cb2049de8e87df0683d93de00cf0cf45349198cbb2bf867396",
+    "validation/cue_cue_hidden.hex": "accaf9c3ae0f3bda30c5c2fb51d9758afeea7d03566ae364cd0afb4d7a0d2c3e",
+    "validation/cue_cue_trigger.hex": "f1e09ab279b539bb6741944f8591ace26355aa17ad784e2210b8b9c907749d62",
+    "validation/cue_labels.hex": "649b7d04ee6fac1d76cce4f4158186b91f1eced0f629e6ca5935a58d70d0a804",
+    "validation/cue_limits_hidden.hex": "b35b2fe7166eaf500c48660efdc8031c008c58d698640e61a8c3fbd7680f724a",
+    "validation/cue_limits_scores.hex": "22c006d9f14bad5012eeed30f6589a6f5a3463a97c43adf5d85c05c49319c0b3",
+    "validation/cue_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/cue_old_labels.hex": "95d78d2f39f8df89f0f26b2418e63767dca2e7bcc398a6b4369c8591681d08c3",
+    "validation/cue_orientation.hex": "45254de56ec10b6f90e8bbb0625a4e11acc9b33f5d36a336deb32de72cc72f0f",
+    "validation/cue_pixels.hex": "0e8667e20293e05da8e69f31810f220f954f13cd72f8d8d685110dc89b4f73f9",
+    "validation/cue_policy.hex": "dc4b1d0274e4ddbc3d52402bd3c3e962ca05485371e447f58efe2dc975a44fe1",
+    "validation/cue_ss.hex": "c3a5f25433b342ee163f741c33ccab314a28f3d307dd77507c243eb6986ea65c",
+    "validation/display_expected.hex": "624425b1bfbe36da304a3c4f4868062fb3583916e1a3375b4a3b8687c86db1d4",
+    "validation/display_words.hex": "a16cae1ae20bd18dea5858bcb4135b5ae6c57a4ec9875619bc4edb060815cb6f",
+    "validation/expression_competitor_gaps.hex": "dd56d83b90947e3bbaa8000edd7d0e12c3f73b5b1e856850560c82491b817f77",
+    "validation/expression_head_weights.hex": "ec17faae7ae1e6bfb6bc8d73e4e55434360b61b2121c59553285e7103dc85085",
+    "validation/expression_histograms.hex": "b636e7c09adc2ef6f47b35a6b16f97236d8cc4088f835d446e16326e7e4744f7",
+    "validation/expression_labels.hex": "e1c9cba75c3312f52f6fd2c87e4a1dea7df85953a17507e8e3735d41a9180600",
+    "validation/expression_low_head_weights.hex": "16271ebd6564abca364aebfe342ae1884d3e2493f9c5200dfb044dd78546a967",
+    "validation/expression_low_thresholds.hex": "5d3da4dc83cae9848ca55841cc938d6885c8f4c92dad829c5568637f4062b4e4",
+    "validation/expression_modes.hex": "1e372a6d2a63bd15fcbb21f6f081d9a4775e5a508e168c0dda6b5c0444a545b7",
+    "validation/expression_pixels.hex": "8f8eb1913ce4880100920f43b24740ec2b1a8834fd948187a20bcdc823a4b1a8",
+    "validation/expression_preview_instance.vh": "513014cb7bb26aec99d52bdb43ce40b677ae054fd7e3f2226aabaf65846f256e",
+    "validation/expression_remainders.hex": "d1450b59c5feb8a24d9de49f222e0ab51248c610319ace2dae4b487a40c89534",
+    "validation/expression_scores.hex": "f7e9e7d55cd205c098e13f15c487bb041b2aac684a7de8d0bfd27e0c79e6f7df",
+    "validation/expression_thresholds.hex": "87d85cb376551e1e6f1dc226fe70a07ec812fc3099778cc101af65854d9c1dd0",
+    "validation/expression_w1.hex": "3a14cf863ce565d7f672a5c9b8e1a7a00cef2f36272054e31d6ae64d8f8fab61",
+    "validation/face_blank_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "validation/face_blank_integral.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "validation/face_blank_pixels.hex": "d02eda4956561310cee133ade1dd59fd4a49335cdf9fa2cfc0cbf94bf427a27e",
+    "validation/face_face_center_hits.hex": "8cc5614c87beb70d178a4a7887184b426559fb591cf7e3cb3ac90c4b2e817c1a",
+    "validation/face_face_center_integral.hex": "affa0eefcfcc250d7c33493528592fbaa2ed9dd46d10257c20a3fe99fd8d8761",
+    "validation/face_face_center_pixels.hex": "b421cc897e0518fe20df59f5d2fba1b29cfb2aa6c5fd3a4f021d61dd8c4b523b",
+    "validation/face_face_left_hits.hex": "87f1a56cd40f4d4f664aaa7fc701e0fd3008137c9e8f03718a4839bc980ea3a8",
+    "validation/face_face_left_integral.hex": "f596e69c2fdacf71ef414f19378d4daab5d2dc2b4997ae6d1548e764a301b7d3",
+    "validation/face_face_left_pixels.hex": "253bcc1e52f26cc8a741c2c8df838da0db7404ac64e378cefdc90143c7313434",
+    "validation/face_face_right_hits.hex": "7142e0a11c2eb54e63e0df6717048e5fc569839c636e21d2ddb1dffde77c2f84",
+    "validation/face_face_right_integral.hex": "0d9bfb589bab95f458ae92bf677088362642e76c8eec5559690a68add4453973",
+    "validation/face_face_right_pixels.hex": "bc6a00af2a716f5f41d072a5461055a2ffc3f7e054e182367bb672e86e2cce4a",
+    "validation/face_groups.hex": "f9c477da64e8ccf7f477fe91402aaad45c1ced305d2def7cf38364af102eeeae",
+    "validation/face_hit_counts.hex": "d9f07cb6c23361397e5224a5c0bd04759dd22d54ccee83717bd74fbf4d15ebde",
+    "validation/face_meta.hex": "8f3e97c83e457816cbce9679b675509a8b91c9f3be7156af27168f6ec7d47360",
+    "validation/face_noise_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "validation/face_noise_integral.hex": "ebbf6abcb741300eb513c7737dc35c31ef679ea48564c2adf4bd64442fd85042",
+    "validation/face_noise_pixels.hex": "984d3df9a5cbc95bbe768b588a3b5e4f7370ec1258c7a37ab421efb88d5f0ef2",
+    "validation/face_profile_left_hits.hex": "c4f0ff26a25149d8703de0177b4d05d60f6e9e936ca865f2d82b638f0e1332f3",
+    "validation/face_profile_left_integral.hex": "c5b1d44deb1f3fe0be5343fd1ac608cb939a447a1dea103c1e9e99d2fac6d08f",
+    "validation/face_profile_left_pixels.hex": "b869f965ad9154624a7df0b5da1896d3f91196bdf830693637461d9ce9c589fd",
+    "validation/face_profile_left_upside_hits.hex": "6fdb555028e9506c718d2d18c8c2422644630e4ba64fbf9f57ad613c873bba29",
+    "validation/face_profile_left_upside_integral.hex": "162e61873c67d51d7ae907c757f03cfbf7661199a3e6644293154949a702eeb6",
+    "validation/face_profile_left_upside_pixels.hex": "12d1ce92318facdd7884681701fa42623f530b6b4765e741940a2232c5ef3d61",
+    "validation/face_profile_right_hits.hex": "d096a548693a947b0c56c6cb9a9c24dd9e540025264f3ee3e121615385dfcf76",
+    "validation/face_profile_right_integral.hex": "e57cb2d4016ae7dc26ccec5c86d944aaf1dd22a32accd36a017781d19a2bffc9",
+    "validation/face_profile_right_pixels.hex": "8d1953df5616fa65fe48e17dd37f43342218abcb3b156d2b9788edf9143a9412",
+    "validation/face_profile_right_upside_hits.hex": "2acd0fd0dab752fe652b6b4fa878eb31d17b5bb14346877cd90bce7dadf1b708",
+    "validation/face_profile_right_upside_integral.hex": "2d2e9558226c7c0c3a457b725fed13bc6eae933076a3fb8484ee82c778dbf05f",
+    "validation/face_profile_right_upside_pixels.hex": "f0e966c38f393b7dc67a0ff211a4235c6fe085180dbc6be51e645a3af74cde8a",
+    "validation/face_ramp_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "validation/face_ramp_integral.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "validation/face_ramp_pixels.hex": "669ec934e1b2c9ec461f0a313c136f2cf24ed0d5c0f0ffc619fad536ce217c7a",
+    "validation/face_skin_flat_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "validation/face_skin_flat_integral.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "validation/face_skin_flat_pixels.hex": "110a5bea4831eaf60e9f4b932249ae7b905c09a8242df585dc3bc6a8be1fd8d6",
+    "validation/face_stages.hex": "3e2223d433cb2e2b8bce84a18a355918e4e835015b79e1752a81fbd20897e535",
+    "validation/face_subsets.hex": "d81bcca02e1a68921120002d43ccf766681ed60d065cb9e90744dd2902b4af6e",
+    "validation/fixtures_sha256.json": "a5049643033bd916754ed4f1aa3264b27fc3bd7a4fb21ea5acfe37662642fa7f",
+    "validation/large_0_integral.hex": "cdc52f2c622af801f64c9bb8181d7743b2366604ecfad395579cdc0ef0841633",
+    "validation/large_0_pixels.hex": "465592a0201e69cf49338a664bb07cc7b59ed1fabc79cfabd4cfce661911bf6c",
+    "validation/large_1_integral.hex": "e2a037041405956fe72ef0941690036ef456819878e16212c97fcf285c8641b3",
+    "validation/large_1_pixels.hex": "e9d050ec6a356e8ccafa2df423e7e18070f9ee039c7c562f395d1e1d58d8e7fd",
+    "validation/large_2_integral.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "validation/large_2_pixels.hex": "d02eda4956561310cee133ade1dd59fd4a49335cdf9fa2cfc0cbf94bf427a27e",
+    "validation/large_3_integral.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "validation/large_3_pixels.hex": "110a5bea4831eaf60e9f4b932249ae7b905c09a8242df585dc3bc6a8be1fd8d6",
+    "validation/large_4_integral.hex": "b2ed31df3389fd11f54d295d3759686421fb1ec0a6f881458a49a519cc435384",
+    "validation/large_4_pixels.hex": "37a9e4884e9490816d2c4cc797d4294b947530782c237281ab590b303d364cf2",
+    "validation/large_5_integral.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "validation/large_5_pixels.hex": "669ec934e1b2c9ec461f0a313c136f2cf24ed0d5c0f0ffc619fad536ce217c7a",
+    "validation/large_groups.hex": "0553a068d1747d553cf79ef7a65f28d5f8cc9e0b10fd67903e0aed8458ae2b30",
+    "validation/logo_compact.hex": "6439a7466080f415edf1012fba84ebf27fbdc44f0c529ae14a8a597ebc05a2e3",
+    "validation/logo_low4.dath": "08906ceddcc1d44061b4abb6993efceda8a1f8afe2e689c20f9a2f94ef9b8204",
+    "validation/mode_camera.hex": "a1ffbfc087ca364ab31408e558282d0dd53411852036ff69685ce4ccfd580316",
+    "validation/mode_candidate.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "validation/mode_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "validation/mode_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/mode_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "validation/mode_strong.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "validation/mouth_limits_features.hex": "99ff56fb2b4a260c4a344ef09882c35eb82befea35a15ecea1b2cbed8cae50b8",
+    "validation/mouth_limits_modes.hex": "290a509b097006998efa506431caea0a103a820fc134606daf1d3a33b93483cd",
+    "validation/mouth_limits_partial.hex": "f72a4ee8f5c3caa89f6cd3c2da54bce841b2345cb83862fd8e95731be5cfbbbd",
+    "validation/mouth_limits_scores.hex": "da94b9585a0003a0bdd2531da26dfbbe1c16024f90d8976bc0797b918ba08b71",
+    "validation/pet_expected.hex": "5a56ef8c5df4145ffe19084faaa27904bb612228d6cfcfc6fe0020f79871e948",
+    "validation/pet_pixels.hex": "343e5489dcd4fa7ac8e793a2edb8f0df7598aeb8db70492fccbd689b42c8fc8d",
+    "validation/profile_phase_expected.hex": "2080059d76e4a8d9974c4baeb385828d994eb9dd609457e6d261080d6419a0c8",
+    "validation/profile_phase_pixels_0.hex": "9a26e9fb02460fd1100abdd6d526bd1d87726c0872301efd349692b5170b4aed",
+    "validation/profile_phase_pixels_1.hex": "1d95bbf59d3d048d7359bfe307d0a22d360ec967642210130e78f49fb736fe6c",
+    "validation/profile_phase_pixels_2.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "validation/profile_phase_pixels_3.hex": "ebbf6abcb741300eb513c7737dc35c31ef679ea48564c2adf4bd64442fd85042",
+    "validation/profile_phase_pixels_4.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "validation/profile_phase_pixels_5.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "validation/profile_v14_0.hex": "e57cb2d4016ae7dc26ccec5c86d944aaf1dd22a32accd36a017781d19a2bffc9",
+    "validation/profile_v14_1.hex": "713f04de601562faaed9791865ab162e0f35595e0b511c71146eeae6231ff2fa",
+    "validation/profile_v14_10.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "validation/profile_v14_11.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "validation/profile_v14_2.hex": "c5b1d44deb1f3fe0be5343fd1ac608cb939a447a1dea103c1e9e99d2fac6d08f",
+    "validation/profile_v14_3.hex": "cf3704f7975984c14ee7eb3d99beaf853ded553e0da988963a314a4568a0c84a",
+    "validation/profile_v14_4.hex": "2d2e9558226c7c0c3a457b725fed13bc6eae933076a3fb8484ee82c778dbf05f",
+    "validation/profile_v14_5.hex": "9a26e9fb02460fd1100abdd6d526bd1d87726c0872301efd349692b5170b4aed",
+    "validation/profile_v14_6.hex": "162e61873c67d51d7ae907c757f03cfbf7661199a3e6644293154949a702eeb6",
+    "validation/profile_v14_7.hex": "1d95bbf59d3d048d7359bfe307d0a22d360ec967642210130e78f49fb736fe6c",
+    "validation/profile_v14_8.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "validation/profile_v14_9.hex": "ebbf6abcb741300eb513c7737dc35c31ef679ea48564c2adf4bd64442fd85042",
+    "validation/profile_v14_expected.hex": "25071963c9c99cc9e83b8f2f1db178e4748fb12aba4034d84c962c488cebc965",
+    "validation/reliability_gray4.hex": "0499a8a45b86a5484b9145e4eaecbadeac3a4e85c028c21d8cddddc32d84f5cf",
+    "validation/tone_expected.hex": "6479265272ed7e66a9456838e169070fb42e463b915bba4da21bc2ca0cbcd450",
+    "validation/v21c_action_orientation.hex": "0f54fa9cc4125c549f0e02f05d4957623ba511afa6fbbb20b6867e8b613f0ba7",
+    "validation/v21c_au.hex": "8cc1e24c94c3551002c3aed18c761edb55ccb92e4528e6d7dae2b4172a04e49b",
+    "validation/v21c_camera_pixels.hex": "014f3c7cf468d96f1ed354a7ba8ced3a561a6da195fba77b79c3821c6627e0cc",
+    "validation/v21c_confused.hex": "6c49b5d7c290505ee01d90b9bb4deb1d3c108abb9f29c74579eb861cd170e696",
+    "validation/v21c_cue.hex": "e34b48a330107bd2d84be04b3abe64b11d098226769ae7faa6c0553ac8ee6bfb",
+    "validation/v21c_labels.hex": "e9a850acd9900a33cc0cf7eda59e379b346f9d6815afeb4c23ce0b3a69da16db",
+    "validation/v21c_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/v21c_mouth.hex": "1415441930387b8a547db761b1f462a8619c5ced8ac92fee8a5a233e3054827c",
+    "validation/v21c_mouth_partial.hex": "ebcdf72cbbb90de0f25c3eb86032b167e8cb4007611438902fce8ea23332c1ea",
+    "validation/v21c_orientation.hex": "69ff6252f7191b2b85f02a849cce5dde67799b1c77569375ee8f4bbfdf6745bb",
+    "validation/v21c_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "validation/v21c_policy_brow.hex": "0c0738f617002f117eafa74e7bf642a23052eade3b6fa29802bca2c3dfe9b558",
+    "validation/v21c_policy_candidate.hex": "76a0acd4fe77f17d5b6d5faece08ab05c194fc08ee6be98185f88697583e7244",
+    "validation/v21c_policy_contrast.hex": "120b125bad4d018b08bb523e122402320415ae1486726786d29b1fc4cf068f56",
+    "validation/v21c_policy_label.hex": "f4f1dccbbb375b76a12fd67f0649aeb0fe55395af67bc8b27920dadeea627723",
+    "validation/v21c_policy_mouth.hex": "d239628f63442ff63cd7374c9849332e935d826dffa020b1cfad536e23baf1b4",
+    "validation/v21c_policy_old.hex": "6f0b7dff350570df86509f9cbea63ce3445731d291277059b71a640c9cbf810a",
+    "validation/v21c_policy_orientation.hex": "7f16678c9aa54d3a1a1076525e4a1b85c28235da9cc6c45c8a0c7e431cd5b8c0",
+    "validation/v21c_policy_raw.hex": "48ebe2d207fa383b56d714a7bf717ff15d9f6371022ee4e8884755f31efa7400",
+    "validation/v21c_ss.hex": "11c151158476bbfcae9dc6b41f06b170e6403e252412e42320ead8be274b60b0",
+    "validation/v22_sensitive_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "validation/v22_sensitive_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "validation/v22_sensitive_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "validation/v22_sensitive_v22_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "user_source/hdl_source/logo_low4.dath": "08906ceddcc1d44061b4abb6993efceda8a1f8afe2e689c20f9a2f94ef9b8204",
+    "td_project/logo_low4.dath": "08906ceddcc1d44061b4abb6993efceda8a1f8afe2e689c20f9a2f94ef9b8204",
+    "user_source/hdl_source/pet_pixels.hex": "343e5489dcd4fa7ac8e793a2edb8f0df7598aeb8db70492fccbd689b42c8fc8d",
+    "user_source/hdl_source/logo_compact.hex": "6439a7466080f415edf1012fba84ebf27fbdc44f0c529ae14a8a597ebc05a2e3"
+  },
+  "fixture_sha256": {
+    "action_policy_contrast.hex": "45334c50d075e33acc98a7b774688486de8f1101fdad53f17a073aef1a560fff",
+    "action_policy_count.vh": "1ddc507195b795734139f5257f21305d5e6da03aa5728fa9ca917832e4867327",
+    "action_policy_debug.hex": "0716d2cf34a65dc59f88db2d240d51ace0722d378c426429e5c2f7b7d3711028",
+    "action_policy_labels.hex": "268366d8194022ad9e42f08dfced7262ae6bea85ecb9857a64556ee85e449314",
+    "action_policy_ori.hex": "7b258285f0a4cf45ef24b56e344469ecd8e49cf3006abdb4a584dc8a335322c2",
+    "action_policy_raw.hex": "379516cb90cb3bfed0f94b97f5584405d5f01d0d87fbdc70ab65f8df3a7cbf8a",
+    "action_policy_scores.hex": "67a65588fe1dfbdd19479eecca83c6c5fd63109b0dd25cc6d598b711b78af25b",
+    "advanced_config.vh": "994e21e0b1ce6effcdf7e915340b0f675b1ad3fb6d7874db90eb64861cfafb65",
+    "advanced_expected.hex": "28e640b89dc95cc606c80a4af52a47bd1c61f891d9e95029ab4f2f2c77ab4565",
+    "advanced_frames.hex": "1033f461dae7b42665b6cb847a6e7665942d3312d602c1de5acaa6d29446f2af",
+    "advanced_hand_bias.hex": "0806c69d86d975824625d0864628e1ae1bf4231aba4e1a2c0d70a78f6a86b7da",
+    "advanced_hand_coeff.hex": "9e1ede67c6f4363b4eaf2f44da9816ccfa65cc8cb7021bba289fc27414f0be5e",
+    "advanced_hand_head.hex": "6f71db83470709a885840f983692c379165fdb59b17fedb372559f46b39d4e58",
+    "advanced_v2_config.vh": "5396cdeffd642f3070b0caa99faa60c8956e3f272a5fe72bc4a6bcc36f983746",
+    "advanced_v2_mask.hex": "95eed106d3bf9875f7d40e6a2d66c325a25405bb2a0f9da4695706007d8f5db2",
+    "advanced_v2_raw.hex": "9b8f4b63aaa54d3e4ff4bdd5bfea0de78ec8a32f8b2ff7dda584d7e9b39cc1ed",
+    "advanced_v2_raw_expected.hex": "78783efa3e80ff02cdb2e4e635fce24faf45bae26be034b665fc3e5c35555f0c",
+    "advanced_v2_score.hex": "39648288679ea1b2e31175c49ffd2a8c47810ba3b453052daa627c2316aaaa31",
+    "advanced_v3_tracking.hex": "1ab61b74e64e59d069cdc0ef55b8bc64afe400cf1f1854227b86ad0a71830a38",
+    "advanced_v4_tracking.hex": "7f1776b494040d4f92df5dc31773b23cfd785b6a75dcd94c63ff651c98f41727",
+    "au_action_orientation.hex": "8ee7f18722dac3080b4b28f4fd1993641d15b1829a453f2ac234949245b8a29b",
+    "au_au.hex": "4a853f47e17b2332142b9e34a07ce3447f8db488687f89f239931004aff6b189",
+    "au_hidden.hex": "a19e69e9963126eec86f75d083ff7ea9d9628b43ffd239bd5015c986d044f008",
+    "au_labels.hex": "201e0d2ed710d62c7a8ccc552ce9008d88a25ad33567ada3f377352444737062",
+    "au_limits_hidden.hex": "f7d7cfe7162fea93b388de4bf70f9842b57fa113bbbda21975cadcef271d903b",
+    "au_limits_scores.hex": "1c0630e2bb0149caa783253be3ff6834230452fc401582b10d72bc1abe74eef3",
+    "au_limits_tense.hex": "f7c78e1725ae994eaecefb24be81bd9eff65e8be86dbbb68fd7888829bbf19ef",
+    "au_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "au_orientation.hex": "733771f76f73e61faf95d11bccfc089eefbf385b38e2b2416af3a4aa53803175",
+    "au_orientation_scores.hex": "ca1b3de1090af1b6f16ccd714f85a4e8bf2a68f51128d31279be865165cf742c",
+    "au_pixels.hex": "ca5bbce2fe8362498d6deb19caf04d4062c7f8e434dc4254081ee7ec0547f27a",
+    "au_ss.hex": "1b666c4baf2186b5284ba3504f03e133af14646a8e228f5aa00d0858a28a6c7b",
+    "balanced_action_orientation.hex": "0f54fa9cc4125c549f0e02f05d4957623ba511afa6fbbb20b6867e8b613f0ba7",
+    "balanced_au.hex": "8cc1e24c94c3551002c3aed18c761edb55ccb92e4528e6d7dae2b4172a04e49b",
+    "balanced_camera_pixels.hex": "a1ffbfc087ca364ab31408e558282d0dd53411852036ff69685ce4ccfd580316",
+    "balanced_confused.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "balanced_cue.hex": "e34b48a330107bd2d84be04b3abe64b11d098226769ae7faa6c0553ac8ee6bfb",
+    "balanced_debug_byte.hex": "b46c428f2b6b40d9b232ee272a53adff387419b6da54c3ba7617b4c16db5ffc5",
+    "balanced_labels.hex": "e9a850acd9900a33cc0cf7eda59e379b346f9d6815afeb4c23ce0b3a69da16db",
+    "balanced_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "balanced_mouth.hex": "1415441930387b8a547db761b1f462a8619c5ced8ac92fee8a5a233e3054827c",
+    "balanced_mouth_partial.hex": "ebcdf72cbbb90de0f25c3eb86032b167e8cb4007611438902fce8ea23332c1ea",
+    "balanced_orientation.hex": "69ff6252f7191b2b85f02a849cce5dde67799b1c77569375ee8f4bbfdf6745bb",
+    "balanced_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "balanced_policy_brow.hex": "f51517e002057c6d50561abf7ebfc2a943b42c34dcd6d50b766409290b3910fb",
+    "balanced_policy_candidate.hex": "9bed514677a3ecc541a094ac13846f0957c766f9e7bbead32673265c3c9b59fb",
+    "balanced_policy_contrast.hex": "752aa8498ec3f0656dae844db572a5fab61fa379e7d7053ab2a3769162d9e1b9",
+    "balanced_policy_down.hex": "a1795694dab38af5dcd726992d99e24b4e5a0a1731eb7bea766880a9eb6ea720",
+    "balanced_policy_label.hex": "7cbd766c97209f606a5944e3fc6107b886eb2d0f9996d8803cd03d092fbd78af",
+    "balanced_policy_mouth.hex": "fdfb27a5e43e3638af40b514a2583ef8ccf43dba9216409925e1ce7999844e1c",
+    "balanced_policy_old.hex": "344b06533b031b42cba8a5383909d70be3dadc1d40fb803a571287f9e73ba3de",
+    "balanced_policy_orientation.hex": "db04f7932c83c533f6744b2ee866f8c8f512f143a770cef96d6fce7ef1964562",
+    "balanced_policy_raw.hex": "63febc836dc5a0982922cbe8b1f160cca19e9b30fc93df3cadb6d6695459b117",
+    "balanced_policy_smile.hex": "7339c5a8fdd9767dcb5cc2f9a784841640090cec010ad92ce75295485fcab232",
+    "balanced_policy_strong.hex": "50e58253f5fa31fc082ee3966a0147d83f0e7cef63b1fb994ff31f2a14b4fbe8",
+    "balanced_policy_total.hex": "ffd9b33bc1157f17018955114c1ab7d4ef832a2664ffe51159a0bb9274fca550",
+    "balanced_raw.hex": "28f0660eab597e772933afeb9e91e29c3aece18ff67a1cec6d2af3545542e793",
+    "balanced_ss.hex": "11c151158476bbfcae9dc6b41f06b170e6403e252412e42320ead8be274b60b0",
+    "balanced_strong_r.hex": "6c49b5d7c290505ee01d90b9bb4deb1d3c108abb9f29c74579eb861cd170e696",
+    "cartoon_chain_color32.hex": "e0a36443e5f8f3191b5126abd277b1367c9385f37b49ca68f8d52f70f7afe072",
+    "cartoon_chain_color64.hex": "d3adb788b48f0f3be21f1272fe31c1775c8aa8611198c4a93b796da04196c164",
+    "cartoon_chain_color96.hex": "324338d2c38fa269767770c528190444536a66e52a7b1f44beab7dd401f982bc",
+    "cartoon_chain_expected.hex": "b1cbcf5efa3b09332202583226a38e8f590d2efd91d0d6de8b28301a53e68afd",
+    "cartoon_small_input.hex": "5ef051bba37da9c3dcf0cb3f6130ce6be9f5b7c62464526963bad7166092a238",
+    "cartoon_small_mode0.hex": "5ef051bba37da9c3dcf0cb3f6130ce6be9f5b7c62464526963bad7166092a238",
+    "cartoon_small_mode1.hex": "c847eb2a8b0cad2f0a86c6773330d9f9ed30b46f6a2d853ecb8a988829793fd5",
+    "cartoon_small_mode2.hex": "f1d5773672be911e748a77ae0cbc3819f2b411066f6ded8ca9daf884a2f7d6da",
+    "cartoon_small_mode3.hex": "29d28ad2dd6dce3fe08723f98e641dfe169a9543c1a713eb07d23adddfb2b576",
+    "cbrow_camera_pixels.hex": "a1ffbfc087ca364ab31408e558282d0dd53411852036ff69685ce4ccfd580316",
+    "cbrow_cbrow_hidden.hex": "96895b705b05558193d69828122ddeafa8cdd92d939d31a806fe7dc8460e4ab0",
+    "cbrow_cbrow_scores.hex": "59c54304b18d2814af8ce1febe38b4edb8973392860afb5cb9d28a5546bdd906",
+    "cbrow_confused.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "cbrow_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "cbrow_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "cbrow_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "cbrow_raw.hex": "28f0660eab597e772933afeb9e91e29c3aece18ff67a1cec6d2af3545542e793",
+    "chain_color32.hex": "fee97a5a7ff360f5b4da97ef1572ea61bc26c24398c48ddd0f57f495b576873b",
+    "chain_color64.hex": "ecfb07750dfde6c50a149133c4e6f06910f5ed211b9d0ccd296e52d03bab99b5",
+    "chain_color96.hex": "ecb9fe94f4fc7f04aaf7ff58a0d89e0aec6fa3d0bc525844604c9c3c5311dc97",
+    "chain_expected.hex": "76b065eb5fb94fe43b1f52e6d9953d9abf7ef37bf0669db5587b3ba5bd9ac127",
+    "chain_input.hex": "ca56c9d9b1488990a8d26cae22e175dbe9131da3ffb5e1f217c90c371d6f35bc",
+    "cue_action_orientation.hex": "a63b54df984c0a62893749588b6b7504ed7fd12328f17868a2b214a24c8fc9d8",
+    "cue_au.hex": "e013c10eac39c56c637a24873bd660159b7ffdc3444575891157832f91d9fa0a",
+    "cue_cue.hex": "6f8d1d0a670710cb2049de8e87df0683d93de00cf0cf45349198cbb2bf867396",
+    "cue_cue_hidden.hex": "accaf9c3ae0f3bda30c5c2fb51d9758afeea7d03566ae364cd0afb4d7a0d2c3e",
+    "cue_cue_trigger.hex": "f1e09ab279b539bb6741944f8591ace26355aa17ad784e2210b8b9c907749d62",
+    "cue_labels.hex": "649b7d04ee6fac1d76cce4f4158186b91f1eced0f629e6ca5935a58d70d0a804",
+    "cue_limits_hidden.hex": "b35b2fe7166eaf500c48660efdc8031c008c58d698640e61a8c3fbd7680f724a",
+    "cue_limits_scores.hex": "22c006d9f14bad5012eeed30f6589a6f5a3463a97c43adf5d85c05c49319c0b3",
+    "cue_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "cue_old_labels.hex": "95d78d2f39f8df89f0f26b2418e63767dca2e7bcc398a6b4369c8591681d08c3",
+    "cue_orientation.hex": "45254de56ec10b6f90e8bbb0625a4e11acc9b33f5d36a336deb32de72cc72f0f",
+    "cue_pixels.hex": "0e8667e20293e05da8e69f31810f220f954f13cd72f8d8d685110dc89b4f73f9",
+    "cue_policy.hex": "dc4b1d0274e4ddbc3d52402bd3c3e962ca05485371e447f58efe2dc975a44fe1",
+    "cue_ss.hex": "c3a5f25433b342ee163f741c33ccab314a28f3d307dd77507c243eb6986ea65c",
+    "display_expected.hex": "624425b1bfbe36da304a3c4f4868062fb3583916e1a3375b4a3b8687c86db1d4",
+    "display_words.hex": "a16cae1ae20bd18dea5858bcb4135b5ae6c57a4ec9875619bc4edb060815cb6f",
+    "expression_competitor_gaps.hex": "dd56d83b90947e3bbaa8000edd7d0e12c3f73b5b1e856850560c82491b817f77",
+    "expression_head_weights.hex": "ec17faae7ae1e6bfb6bc8d73e4e55434360b61b2121c59553285e7103dc85085",
+    "expression_histograms.hex": "b636e7c09adc2ef6f47b35a6b16f97236d8cc4088f835d446e16326e7e4744f7",
+    "expression_labels.hex": "e1c9cba75c3312f52f6fd2c87e4a1dea7df85953a17507e8e3735d41a9180600",
+    "expression_low_head_weights.hex": "16271ebd6564abca364aebfe342ae1884d3e2493f9c5200dfb044dd78546a967",
+    "expression_low_thresholds.hex": "5d3da4dc83cae9848ca55841cc938d6885c8f4c92dad829c5568637f4062b4e4",
+    "expression_modes.hex": "1e372a6d2a63bd15fcbb21f6f081d9a4775e5a508e168c0dda6b5c0444a545b7",
+    "expression_pixels.hex": "8f8eb1913ce4880100920f43b24740ec2b1a8834fd948187a20bcdc823a4b1a8",
+    "expression_preview_instance.vh": "513014cb7bb26aec99d52bdb43ce40b677ae054fd7e3f2226aabaf65846f256e",
+    "expression_remainders.hex": "d1450b59c5feb8a24d9de49f222e0ab51248c610319ace2dae4b487a40c89534",
+    "expression_scores.hex": "f7e9e7d55cd205c098e13f15c487bb041b2aac684a7de8d0bfd27e0c79e6f7df",
+    "expression_thresholds.hex": "87d85cb376551e1e6f1dc226fe70a07ec812fc3099778cc101af65854d9c1dd0",
+    "expression_w1.hex": "3a14cf863ce565d7f672a5c9b8e1a7a00cef2f36272054e31d6ae64d8f8fab61",
+    "face_blank_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "face_blank_integral.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "face_blank_pixels.hex": "d02eda4956561310cee133ade1dd59fd4a49335cdf9fa2cfc0cbf94bf427a27e",
+    "face_face_center_hits.hex": "8cc5614c87beb70d178a4a7887184b426559fb591cf7e3cb3ac90c4b2e817c1a",
+    "face_face_center_integral.hex": "affa0eefcfcc250d7c33493528592fbaa2ed9dd46d10257c20a3fe99fd8d8761",
+    "face_face_center_pixels.hex": "b421cc897e0518fe20df59f5d2fba1b29cfb2aa6c5fd3a4f021d61dd8c4b523b",
+    "face_face_left_hits.hex": "87f1a56cd40f4d4f664aaa7fc701e0fd3008137c9e8f03718a4839bc980ea3a8",
+    "face_face_left_integral.hex": "f596e69c2fdacf71ef414f19378d4daab5d2dc2b4997ae6d1548e764a301b7d3",
+    "face_face_left_pixels.hex": "253bcc1e52f26cc8a741c2c8df838da0db7404ac64e378cefdc90143c7313434",
+    "face_face_right_hits.hex": "7142e0a11c2eb54e63e0df6717048e5fc569839c636e21d2ddb1dffde77c2f84",
+    "face_face_right_integral.hex": "0d9bfb589bab95f458ae92bf677088362642e76c8eec5559690a68add4453973",
+    "face_face_right_pixels.hex": "bc6a00af2a716f5f41d072a5461055a2ffc3f7e054e182367bb672e86e2cce4a",
+    "face_groups.hex": "f9c477da64e8ccf7f477fe91402aaad45c1ced305d2def7cf38364af102eeeae",
+    "face_hit_counts.hex": "d9f07cb6c23361397e5224a5c0bd04759dd22d54ccee83717bd74fbf4d15ebde",
+    "face_meta.hex": "8f3e97c83e457816cbce9679b675509a8b91c9f3be7156af27168f6ec7d47360",
+    "face_noise_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "face_noise_integral.hex": "ebbf6abcb741300eb513c7737dc35c31ef679ea48564c2adf4bd64442fd85042",
+    "face_noise_pixels.hex": "984d3df9a5cbc95bbe768b588a3b5e4f7370ec1258c7a37ab421efb88d5f0ef2",
+    "face_profile_left_hits.hex": "c4f0ff26a25149d8703de0177b4d05d60f6e9e936ca865f2d82b638f0e1332f3",
+    "face_profile_left_integral.hex": "c5b1d44deb1f3fe0be5343fd1ac608cb939a447a1dea103c1e9e99d2fac6d08f",
+    "face_profile_left_pixels.hex": "b869f965ad9154624a7df0b5da1896d3f91196bdf830693637461d9ce9c589fd",
+    "face_profile_left_upside_hits.hex": "6fdb555028e9506c718d2d18c8c2422644630e4ba64fbf9f57ad613c873bba29",
+    "face_profile_left_upside_integral.hex": "162e61873c67d51d7ae907c757f03cfbf7661199a3e6644293154949a702eeb6",
+    "face_profile_left_upside_pixels.hex": "12d1ce92318facdd7884681701fa42623f530b6b4765e741940a2232c5ef3d61",
+    "face_profile_right_hits.hex": "d096a548693a947b0c56c6cb9a9c24dd9e540025264f3ee3e121615385dfcf76",
+    "face_profile_right_integral.hex": "e57cb2d4016ae7dc26ccec5c86d944aaf1dd22a32accd36a017781d19a2bffc9",
+    "face_profile_right_pixels.hex": "8d1953df5616fa65fe48e17dd37f43342218abcb3b156d2b9788edf9143a9412",
+    "face_profile_right_upside_hits.hex": "2acd0fd0dab752fe652b6b4fa878eb31d17b5bb14346877cd90bce7dadf1b708",
+    "face_profile_right_upside_integral.hex": "2d2e9558226c7c0c3a457b725fed13bc6eae933076a3fb8484ee82c778dbf05f",
+    "face_profile_right_upside_pixels.hex": "f0e966c38f393b7dc67a0ff211a4235c6fe085180dbc6be51e645a3af74cde8a",
+    "face_ramp_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "face_ramp_integral.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "face_ramp_pixels.hex": "669ec934e1b2c9ec461f0a313c136f2cf24ed0d5c0f0ffc619fad536ce217c7a",
+    "face_skin_flat_hits.hex": "de832b1314866654def7ef206dfe3c4bf2f8f03c2c3d09c95932aa5c971bfab9",
+    "face_skin_flat_integral.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "face_skin_flat_pixels.hex": "110a5bea4831eaf60e9f4b932249ae7b905c09a8242df585dc3bc6a8be1fd8d6",
+    "face_stages.hex": "3e2223d433cb2e2b8bce84a18a355918e4e835015b79e1752a81fbd20897e535",
+    "face_subsets.hex": "d81bcca02e1a68921120002d43ccf766681ed60d065cb9e90744dd2902b4af6e",
+    "large_0_integral.hex": "cdc52f2c622af801f64c9bb8181d7743b2366604ecfad395579cdc0ef0841633",
+    "large_0_pixels.hex": "465592a0201e69cf49338a664bb07cc7b59ed1fabc79cfabd4cfce661911bf6c",
+    "large_1_integral.hex": "e2a037041405956fe72ef0941690036ef456819878e16212c97fcf285c8641b3",
+    "large_1_pixels.hex": "e9d050ec6a356e8ccafa2df423e7e18070f9ee039c7c562f395d1e1d58d8e7fd",
+    "large_2_integral.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "large_2_pixels.hex": "d02eda4956561310cee133ade1dd59fd4a49335cdf9fa2cfc0cbf94bf427a27e",
+    "large_3_integral.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "large_3_pixels.hex": "110a5bea4831eaf60e9f4b932249ae7b905c09a8242df585dc3bc6a8be1fd8d6",
+    "large_4_integral.hex": "b2ed31df3389fd11f54d295d3759686421fb1ec0a6f881458a49a519cc435384",
+    "large_4_pixels.hex": "37a9e4884e9490816d2c4cc797d4294b947530782c237281ab590b303d364cf2",
+    "large_5_integral.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "large_5_pixels.hex": "669ec934e1b2c9ec461f0a313c136f2cf24ed0d5c0f0ffc619fad536ce217c7a",
+    "large_groups.hex": "0553a068d1747d553cf79ef7a65f28d5f8cc9e0b10fd67903e0aed8458ae2b30",
+    "logo_compact.hex": "6439a7466080f415edf1012fba84ebf27fbdc44f0c529ae14a8a597ebc05a2e3",
+    "logo_low4.dath": "08906ceddcc1d44061b4abb6993efceda8a1f8afe2e689c20f9a2f94ef9b8204",
+    "mode_camera.hex": "a1ffbfc087ca364ab31408e558282d0dd53411852036ff69685ce4ccfd580316",
+    "mode_candidate.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "mode_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "mode_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "mode_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "mode_strong.hex": "0628f082112fddd42e7f19f35a7dae706af159f3e8aed80fa65a898f8612feb7",
+    "mouth_limits_features.hex": "99ff56fb2b4a260c4a344ef09882c35eb82befea35a15ecea1b2cbed8cae50b8",
+    "mouth_limits_modes.hex": "290a509b097006998efa506431caea0a103a820fc134606daf1d3a33b93483cd",
+    "mouth_limits_partial.hex": "f72a4ee8f5c3caa89f6cd3c2da54bce841b2345cb83862fd8e95731be5cfbbbd",
+    "mouth_limits_scores.hex": "da94b9585a0003a0bdd2531da26dfbbe1c16024f90d8976bc0797b918ba08b71",
+    "pet_expected.hex": "5a56ef8c5df4145ffe19084faaa27904bb612228d6cfcfc6fe0020f79871e948",
+    "pet_pixels.hex": "343e5489dcd4fa7ac8e793a2edb8f0df7598aeb8db70492fccbd689b42c8fc8d",
+    "profile_phase_expected.hex": "2080059d76e4a8d9974c4baeb385828d994eb9dd609457e6d261080d6419a0c8",
+    "profile_phase_pixels_0.hex": "9a26e9fb02460fd1100abdd6d526bd1d87726c0872301efd349692b5170b4aed",
+    "profile_phase_pixels_1.hex": "1d95bbf59d3d048d7359bfe307d0a22d360ec967642210130e78f49fb736fe6c",
+    "profile_phase_pixels_2.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "profile_phase_pixels_3.hex": "ebbf6abcb741300eb513c7737dc35c31ef679ea48564c2adf4bd64442fd85042",
+    "profile_phase_pixels_4.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "profile_phase_pixels_5.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "profile_v14_0.hex": "e57cb2d4016ae7dc26ccec5c86d944aaf1dd22a32accd36a017781d19a2bffc9",
+    "profile_v14_1.hex": "713f04de601562faaed9791865ab162e0f35595e0b511c71146eeae6231ff2fa",
+    "profile_v14_10.hex": "46ec5f350af1600b14f43db9661778b64358047d43adb90182076e7be5518b9b",
+    "profile_v14_11.hex": "65f99166a38ef376299b0cfb057f356b08b44ab3f7870f44f92ac35ead2577bd",
+    "profile_v14_2.hex": "c5b1d44deb1f3fe0be5343fd1ac608cb939a447a1dea103c1e9e99d2fac6d08f",
+    "profile_v14_3.hex": "cf3704f7975984c14ee7eb3d99beaf853ded553e0da988963a314a4568a0c84a",
+    "profile_v14_4.hex": "2d2e9558226c7c0c3a457b725fed13bc6eae933076a3fb8484ee82c778dbf05f",
+    "profile_v14_5.hex": "9a26e9fb02460fd1100abdd6d526bd1d87726c0872301efd349692b5170b4aed",
+    "profile_v14_6.hex": "162e61873c67d51d7ae907c757f03cfbf7661199a3e6644293154949a702eeb6",
+    "profile_v14_7.hex": "1d95bbf59d3d048d7359bfe307d0a22d360ec967642210130e78f49fb736fe6c",
+    "profile_v14_8.hex": "d7518a319aba7ea4dbc17803928bfc8280ff7f03a72d2979f069ceeca400369d",
+    "profile_v14_9.hex": "ebbf6abcb741300eb513c7737dc35c31ef679ea48564c2adf4bd64442fd85042",
+    "profile_v14_expected.hex": "25071963c9c99cc9e83b8f2f1db178e4748fb12aba4034d84c962c488cebc965",
+    "reliability_gray4.hex": "0499a8a45b86a5484b9145e4eaecbadeac3a4e85c028c21d8cddddc32d84f5cf",
+    "tone_expected.hex": "6479265272ed7e66a9456838e169070fb42e463b915bba4da21bc2ca0cbcd450",
+    "v21c_action_orientation.hex": "0f54fa9cc4125c549f0e02f05d4957623ba511afa6fbbb20b6867e8b613f0ba7",
+    "v21c_au.hex": "8cc1e24c94c3551002c3aed18c761edb55ccb92e4528e6d7dae2b4172a04e49b",
+    "v21c_camera_pixels.hex": "014f3c7cf468d96f1ed354a7ba8ced3a561a6da195fba77b79c3821c6627e0cc",
+    "v21c_confused.hex": "6c49b5d7c290505ee01d90b9bb4deb1d3c108abb9f29c74579eb861cd170e696",
+    "v21c_cue.hex": "e34b48a330107bd2d84be04b3abe64b11d098226769ae7faa6c0553ac8ee6bfb",
+    "v21c_labels.hex": "e9a850acd9900a33cc0cf7eda59e379b346f9d6815afeb4c23ce0b3a69da16db",
+    "v21c_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "v21c_mouth.hex": "1415441930387b8a547db761b1f462a8619c5ced8ac92fee8a5a233e3054827c",
+    "v21c_mouth_partial.hex": "ebcdf72cbbb90de0f25c3eb86032b167e8cb4007611438902fce8ea23332c1ea",
+    "v21c_orientation.hex": "69ff6252f7191b2b85f02a849cce5dde67799b1c77569375ee8f4bbfdf6745bb",
+    "v21c_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "v21c_policy_brow.hex": "0c0738f617002f117eafa74e7bf642a23052eade3b6fa29802bca2c3dfe9b558",
+    "v21c_policy_candidate.hex": "76a0acd4fe77f17d5b6d5faece08ab05c194fc08ee6be98185f88697583e7244",
+    "v21c_policy_contrast.hex": "120b125bad4d018b08bb523e122402320415ae1486726786d29b1fc4cf068f56",
+    "v21c_policy_label.hex": "f4f1dccbbb375b76a12fd67f0649aeb0fe55395af67bc8b27920dadeea627723",
+    "v21c_policy_mouth.hex": "d239628f63442ff63cd7374c9849332e935d826dffa020b1cfad536e23baf1b4",
+    "v21c_policy_old.hex": "6f0b7dff350570df86509f9cbea63ce3445731d291277059b71a640c9cbf810a",
+    "v21c_policy_orientation.hex": "7f16678c9aa54d3a1a1076525e4a1b85c28235da9cc6c45c8a0c7e431cd5b8c0",
+    "v21c_policy_raw.hex": "48ebe2d207fa383b56d714a7bf717ff15d9f6371022ee4e8884755f31efa7400",
+    "v21c_ss.hex": "11c151158476bbfcae9dc6b41f06b170e6403e252412e42320ead8be274b60b0",
+    "v22_sensitive_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a",
+    "v22_sensitive_modes.hex": "1a1b1fd8d8e416ace2782d1bd8637e4ed55e6aa0080def0d7a60731494449e97",
+    "v22_sensitive_pixels.hex": "c8a1829a10165950b572b0f4a96a2e659fb30972d3ddb25f8b986c01ca46cea8",
+    "v22_sensitive_v22_labels.hex": "2f07cd9c24b76fc0348e55d32b880ab83f891cb8bbe6332d4b7b424476ed908a"
+  },
+  "parallel_execution": {
+    "jobs": 4,
+    "private_work_libraries": true,
+    "all_tests_rerun": true,
+    "fixed_vectors_checksum_verified": true,
+    "elapsed_seconds": 282.6
+  }
+}

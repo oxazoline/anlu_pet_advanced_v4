@@ -1,0 +1,45 @@
+// Generated lossless signed6 main weights; numeric trained model unchanged. Registered look decouples shift and decode.
+module ext_expression_weights(input wire clk,input wire rst_n,input wire start,input wire [4:0] neuron,input wire ready,output wire valid,output wire [5:0] value,output reg done);
+localparam IDLE=0,WAIT1=1,WAIT2=2,AVAILABLE=3,LOOK=4;
+reg [2:0] state;reg [35:0] buffer;reg [5:0] bits_valid;reg [11:0] remain;
+reg [13:0] ram_addr,next_word;reg [4:0] skip;reg first;
+(* ram_style="block" *) reg [17:0] memory[0:@LAST_WORD@];reg [17:0] rom_q;
+initial begin
+@DATA@
+end
+always @(posedge clk) rom_q<=memory[ram_addr];
+function [18:0] seek;input [4:0] n;begin case(n)
+@SEEK@
+default:seek=0;endcase end endfunction
+wire [18:0] start_pos=seek(neuron);
+wire [15:0] look_from_buffer=(bits_valid>=16)?(buffer>>(bits_valid-6'd16)):16'd0;
+reg [15:0] look_reg;
+reg [5:0] value_dec;reg [4:0] length_dec;
+always @* begin value_dec=0;length_dec=1;casez(look_reg)
+@CODES@
+default:begin value_dec=0;length_dec=1;end
+endcase end
+assign valid=(state==AVAILABLE)&&!start&&(remain!=0);
+assign value=value_dec;
+wire [6:0] filled={1'b0,bits_valid}+7'd18-(first?{2'b0,skip}:7'd0);
+wire [5:0] consumed=bits_valid-length_dec;
+always @(posedge clk or negedge rst_n) begin
+ if(!rst_n) begin state<=IDLE;buffer<=0;bits_valid<=0;remain<=0;ram_addr<=0;next_word<=0;skip<=0;first<=0;done<=0;look_reg<=0;end
+ else begin
+  done<=0;
+  if(start) begin state<=WAIT1;buffer<=0;bits_valid<=0;remain<=2016;ram_addr<=start_pos[18:5];next_word<=start_pos[18:5]+1'b1;skip<=start_pos[4:0];first<=1;end
+  else case(state)
+   WAIT1:state<=WAIT2;
+   WAIT2:begin buffer<=(buffer<<18)|rom_q;bits_valid<=filled[5:0];first<=0;
+    if(filled<16)begin ram_addr<=next_word;next_word<=next_word+1'b1;state<=WAIT1;end else state<=LOOK;
+   end
+   LOOK:begin look_reg<=look_from_buffer;state<=AVAILABLE;end
+   AVAILABLE:if(ready)begin bits_valid<=consumed;remain<=remain-1'b1;
+    if(remain==1)begin state<=IDLE;done<=1;end
+    else if(consumed<16)begin ram_addr<=next_word;next_word<=next_word+1'b1;state<=WAIT1;end
+    else state<=LOOK;
+   end
+  endcase
+ end
+end
+endmodule

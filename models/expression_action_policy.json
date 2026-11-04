@@ -1,0 +1,14 @@
+{
+  "version": "v20",
+  "old_tense": 1198,
+  "old_smile_veto": -1024,
+  "low_tense": 64,
+  "weak_brow": 128,
+  "brow": 640,
+  "down": 512,
+  "press": 512,
+  "new_smile_veto": -1536,
+  "orientation_min": 128,
+  "contrast_min": 24,
+  "scope": "V19 policy retained except weak brow witness384->128; two-of-three same-owner temporal entry and three-neutral nervous exit. Numerical models unchanged."
+}

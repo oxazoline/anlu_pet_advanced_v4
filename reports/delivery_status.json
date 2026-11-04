@@ -1,0 +1,88 @@
+{
+  "version": "pet_advanced_v4",
+  "tests_passed": 126,
+  "advanced_tests": 22,
+  "timing_ns": {
+    "SWNS": 0.124,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "sta_coverage": "95.12%",
+  "post_route_resources": {
+    "slice": 20398,
+    "reg": 17157,
+    "eram20k": 108,
+    "dsp": 39
+  },
+  "resource_limits": {
+    "slice": 21216,
+    "reg": 42432,
+    "eram20k": 108,
+    "dsp": 40
+  },
+  "bitstream_sha256": "65f126783679ce582e8e547be087f7dc8174d6905c7cf405c8118d9c1c7acda6",
+  "reference_sha256": "d1506e585d1a660a346048dd09680e4101fa4241d799ffafaa0c90b5b3aea235",
+  "automatic_exposure": {
+    "default": "AUTO",
+    "meter": "two4096-cell central linear-luma zones, hand-side preference and saturation protection",
+    "initial_exposure_half_lines": 1996,
+    "safe_range_half_lines": [
+      4,
+      3991
+    ],
+    "target": 152,
+    "deadband": 16,
+    "settle_fresh_frames": 2,
+    "consecutive_decisions": "one severe, two ordinary",
+    "severe_step": "50 percent",
+    "ordinary_step": "12.5 percent",
+    "gain": "16x analog / unity digital, unchanged",
+    "verification": "RTL sensor-register model checks passed; measured camera response time is not included in these records."
+  },
+  "reference_tracking": {
+    "preprocessing": "relative local contrast; four-pass stripe suppression",
+    "strict": "one strong or two ordinary fresh matches",
+    "local_search": "25 neighboring positions plus center, expanded to32px; shared registered contour scorer",
+    "weak_and_prediction": "marked bit30; weak measurements update location, prediction at most two frames, eight strict misses or0.4s expire"
+  },
+  "yellow_outline_visible": false,
+  "motion_detection_and_move_status": true,
+  "four_display_modes": true,
+  "frame_bound_latency": true,
+  "static_pet": {
+    "source": {
+      "neutral": {
+        "source_name": "neutral.png",
+        "sha256": "a73e65ac8e119f27325ce95c6454012ff08efbf8768a201ce97c9d731ffaed7d"
+      },
+      "happy": {
+        "source_name": "happy.png",
+        "sha256": "1034bd813bf8e7564d9fb3d0df5401f307a7f9424e3b1acc651aef1e73241b77"
+      },
+      "nervous": {
+        "source_name": "nervous.png",
+        "sha256": "64f872c752a9589e4a6a9e1fea4d7c45436c655662f94df1a13f8e6bd3e40965"
+      },
+      "rice": {
+        "source_name": "饭！.png",
+        "sha256": "9797c255ee7c751f388fe606144db19d939189aa0847cfbc1a142ab72d157ffa"
+      }
+    },
+    "storage": "48x72 shared16-color, fourfold192x288 display",
+    "default": "neutral at bottom right",
+    "mapping": "HAPPY:happy, NEUTRAL/unknown:neutral, R:nervous",
+    "rice": "exclusive override; inward side of purple box; mirrored to face target",
+    "logo": "80x80 palette storage; same160x160 display placement"
+  },
+  "status": "routed_timing_passed",
+  "bitstream": "release/pet_advanced_v4.bit",
+  "hardware_function_test": "V4主要功能实机联调效果良好；识别准确率、连续运行时长及功耗未列入量化统计。",
+  "startup_and_flash": "Flash固化与断电上电启动需按板卡流程独立验收。",
+  "limitations": [
+    "指定米饭打印图案匹配，不是通用OCR。",
+    "单手、手指大致向上的静态V形姿态。",
+    "弱测量与预测不等同于新的完整目标确认。",
+    "RTL与离线结果不直接换算为真实相机准确率。"
+  ]
+}

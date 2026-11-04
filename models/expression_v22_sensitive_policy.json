@@ -1,0 +1,31 @@
+{
+  "revision": "v24",
+  "baseline": "V22 numerical models and H/R policies; small sensitivity increase only",
+  "nerve": {
+    "brow_previous": 512,
+    "brow": 480,
+    "down_previous": -128,
+    "down": -144
+  },
+  "happy": {
+    "native_margin_previous": 21,
+    "native_margin": 20,
+    "low_margin_previous": 574,
+    "low_margin": 546,
+    "native_gap_previous": 27,
+    "native_gap": 26,
+    "low_gap_previous": 1412,
+    "low_gap": 1344,
+    "fast_margin_previous": 2304,
+    "fast_margin": 2188,
+    "fast_low_previous": 2560,
+    "fast_low": 2432
+  },
+  "temporal": {
+    "entry": "V22 two-of3 H/R",
+    "neutral_release": "V22 four consecutive N",
+    "single_spike": "no entry",
+    "fresh_R": "refresh expression freshness only"
+  },
+  "C": "Independent responsive C retained from current iteration; no R prerequisite; does not alter base H/R logits"
+}

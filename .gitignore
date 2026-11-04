@@ -1,0 +1,10 @@
+﻿# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak

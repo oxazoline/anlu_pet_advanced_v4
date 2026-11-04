@@ -1,0 +1,32 @@
+{
+  "reference_sha256": "d1506e585d1a660a346048dd09680e4101fa4241d799ffafaa0c90b5b3aea235",
+  "box": [
+    22,
+    11,
+    142,
+    68
+  ],
+  "foreground": [
+    106,
+    95,
+    120
+  ],
+  "support": [
+    366,
+    328,
+    362
+  ],
+  "normalization": [
+    32,
+    16
+  ],
+  "preprocessing": "V3 relative local-contrast cap; four-pass stripe-suppressed projection; bounded local window quality search",
+  "quality_coefficients": [
+    9,
+    10,
+    8
+  ],
+  "strict_quality_min": 160,
+  "weak_quality_min": 96,
+  "strong_quality_min": 360
+}

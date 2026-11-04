@@ -1,0 +1,15 @@
+{
+  "version": "v26",
+  "based_on": "V25 frozen H/R models and parameters",
+  "confused_enabled": true,
+  "brow": -128,
+  "mouth_entry": 128,
+  "combined": 384,
+  "profile_strong": {
+    "brow": 0,
+    "mouth": 256,
+    "combined": 768
+  },
+  "closed_exit": "fresh mouth flag0 clears C immediately; unsupported-profile C immediately masked/cleared",
+  "scope": "No face-box or H/R classifier changes; side errors reported as false C. v26_5 excludes C/MOUTH/CBROW production inference and display."
+}

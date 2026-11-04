@@ -1,0 +1,6 @@
+{
+  "lbpcascade_frontalface.xml": "https://raw.githubusercontent.com/opencv/opencv/4.10.0/data/lbpcascades/lbpcascade_frontalface.xml",
+  "LICENSE_opencv.txt": "https://raw.githubusercontent.com/opencv/opencv/4.10.0/LICENSE",
+  "cascadedetect.hpp": "https://raw.githubusercontent.com/opencv/opencv/4.10.0/modules/objdetect/src/cascadedetect.hpp",
+  "cascadedetect.cpp": "https://raw.githubusercontent.com/opencv/opencv/4.10.0/modules/objdetect/src/cascadedetect.cpp"
+}

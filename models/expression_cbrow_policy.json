@@ -1,0 +1,23 @@
+{
+  "version": 25,
+  "scope": "Dedicated observable brow and brow+open-mouth head only; V24 H/R numeric models/policies unchanged.",
+  "model_sha256": "64db674aeda37eaab52c36ebe0d868e46c6393d4600f20851290c1f1b3f90e37",
+  "features": 1072,
+  "hidden": 8,
+  "outputs": [
+    "brow",
+    "brow_with_open_mouth"
+  ],
+  "feature_weight_bits": 4,
+  "head_weight_bits": 8,
+  "brow": 0,
+  "combined": 384,
+  "mouth": 64,
+  "contrast": 24,
+  "orientation": 128,
+  "raw_H_veto": true,
+  "C_entry": "2 consecutive positive fresh results",
+  "C_exit": "3 consecutive nonpositive fresh results; H/quality/owner/no face/stale immediate",
+  "resource_plan": "2 new ERAM, reuse existing histogram and serial MAC; no additional DSP planned, actual routed resources required.",
+  "compact_diagnostics": "A first byte7zero+J(combined>=384), second dedicated brow/32, third dedicated joint/32; B dedicated brow candidate; M transmitted min(original_margin,65535), internal model scores/gates unchanged."
+}

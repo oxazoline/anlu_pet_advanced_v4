@@ -1,0 +1,44 @@
+{
+  "model_sha256": "9ba73873ddccc247702a592fb9254c8dc76db05f11c9a54b569a1bbb07afa493",
+  "features": 2016,
+  "hidden": 32,
+  "outputs": [
+    "HAPPY",
+    "NEUTRAL",
+    "NERVOUS",
+    "OTHER"
+  ],
+  "weights": "W1 unchanged signed6 values, lossless neuron-major Huffman stream; W2 signed8 and signed32 accumulators unchanged",
+  "low_class_margin_thresholds": [
+    574,
+    653,
+    1280,
+    2147483647
+  ],
+  "low_fast_happy_margin": 2890,
+  "low_output_head": "128 signed8 weights plus4 signed32 biases; shared W1 and multiplier",
+  "happy_tense_gap": 27,
+  "low_happy_tense_gap": 1412,
+  "native_happy_bias": 0,
+  "fast_happy_margin": 2565,
+  "input_modes": "Native48 for ROI>=192px, native32 for128..191px; preview native32 or48 decimated to32",
+  "histogram_normalization": "Native48 raw half-counts floor; native32 unchanged, packed9-bit counts plus distributed remainder",
+  "capture_prefilter": "mean of x-1/x by y-1/y, half-up (sum+2)>>2 at each native48 sample (ROI>=192px) or native32 sample (ROI128..191px); sampled positions must be on-screen",
+  "packed_words": 14336,
+  "gradient_thresholds": "Native48 max(4,c>>5),max(8,c>>4),max(16,c>>3); native32 keeps max(6,c>>4),max(12,c>>3),max(24,c>>2)",
+  "shift": 6,
+  "class_margin_thresholds": [
+    21,
+    209,
+    1807,
+    2147483647
+  ],
+  "training": "scripts/train_expression_v15.py + calibrate_expression_v15.py + train_low_head_v15.py; H32 signed6 QAT warm-start V14, FER+ sadness/anger/fear proxy for visible tense appearance (not NERVOUS/AU ground truth), soft vote distributions mixed60/40 with majority labels, explicit train-only tense-HAPPY and tense-neutral competition, official GENKI smile-only marginal loss and eyewear/glare/area/light/affine augmentation; FER Training/PublicTest and GENKI train/validation only",
+  "data": "FER2013 pixels / Microsoft FER+ majority labels >=6; exact duplicates removed by unchanged V6 split; GENKI official smile/non-smile labels; raw datasets not distributed",
+  "nervous_proxy": "FER+ sadness,anger,fear grouped into target2; no direct nervous/action-unit labels. OTHER keeps surprise,disgust,contempt,unknown,NF.",
+  "FERPlus": "https://github.com/microsoft/FERPlus",
+  "limitations": "Visible appearance only, not internal state. NERVOUS is a sadness/anger/fear proxy, not genuine nervousness or AU labeling. Subtle smiles/glare remain limited. No camera validation, CNN or landmark alignment in V15.",
+  "weight_storage": "lossless_huffman_stream",
+  "payload_words": 13749,
+  "weight_layout_file": "expression_main_weight_layout.json"
+}

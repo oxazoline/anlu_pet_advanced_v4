@@ -1,0 +1,12 @@
+{
+  "url": "https://raw.githubusercontent.com/opencv/opencv/4.10.0/data/lbpcascades/lbpcascade_profileface.xml",
+  "sha256": "076359afc4ede57e4507f6a6bb5e5c0cbaabaaa41ef514b5f98d01c1bd1d2fff",
+  "credit": "Attila Novak, GSoC 2012, OpenCV LBP profile detector",
+  "base_size": [
+    20,
+    34
+  ],
+  "stages": 16,
+  "weak_nodes": 130,
+  "mirror_for_opposite_direction": true
+}

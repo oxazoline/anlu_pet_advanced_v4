@@ -1,0 +1,17 @@
+{
+  "version": 21,
+  "enabled": true,
+  "brow": 1152,
+  "down": 128,
+  "contrast_min": 24,
+  "orientation_min": 128,
+  "raw_allowed": [
+    1,
+    2
+  ],
+  "protect_all_v20_accepted_happy": true,
+  "old_action_policy_unchanged": true,
+  "nerve_neutral_release": 4,
+  "scope": "Observable AU4/AU15 pseudo-label action cues, not inner emotion. No manual calibration; frozen V20 main/oldAU/HAPPY.",
+  "sensitivity_profile": "High sensitivity; public validation extra neutral->NERVOUS6.34pp, relaxed teacher-control2.45pp; no existing accepted HAPPY lost. Heldout not used for selection."
+}

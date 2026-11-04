@@ -1,0 +1,31 @@
+{
+  "version": "v19",
+  "architecture": "1072-H8-6 signed4/signed8 action student; two1024x18 ROM banks form36bit words with9 signed4 weights or4 signed8 head weights. Shared base MAC. Independent32-coefficient physical orientation head. Registered rolling histogram address.",
+  "model_sha256": "65263a33a5143e5281611568edc3ac5c1324129f2a0e21726a82fe710efba2db",
+  "enabled_by_default": true,
+  "labels": [
+    "observable tension",
+    "AU4",
+    "AU12",
+    "AU15",
+    "AU23",
+    "AU24"
+  ],
+  "teacher": "Offline LibreFace2 public-data pseudo-labels, not human AU truth",
+  "thresholds": {
+    "version": "v19",
+    "old_tense": 1198,
+    "old_smile_veto": -1024,
+    "low_tense": 64,
+    "weak_brow": 384,
+    "brow": 640,
+    "down": 512,
+    "press": 512,
+    "new_smile_veto": -1536,
+    "orientation_min": 128,
+    "contrast_min": 24,
+    "scope": "Sensitivity-prioritized observable brow/lip actions; old path retained; added supported low-T and independent AU4/AU15/press paths. No per-user calibration. Public teacher/student scores are not emotional ground truth."
+  },
+  "scope": "Frozen V18 signed4 learned parameters; V19 sensitivity-prioritized action evidence policy. No new CNN or calibration.",
+  "packed_weight_ram_blocks": 2
+}

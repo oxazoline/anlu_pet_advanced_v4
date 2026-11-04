@@ -1,0 +1,17 @@
+{
+  "revision": "v23-v21c",
+  "baseline": "v21",
+  "brow": 896,
+  "old_brow": 640,
+  "mouth": 256,
+  "require_base_label": 3,
+  "raw_allowed": [
+    1,
+    2
+  ],
+  "contrast_min": 24,
+  "orientation_min": 128,
+  "confirmation": "2 of 3 fresh combined results",
+  "release": "2 of 3 fresh noncombined results; HAPPY/reject/owner invalidation immediate",
+  "scope": "Independent display overlay only; preserves all V21 base decisions and temporal rules."
+}

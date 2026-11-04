@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "rtl_tests_passed": 126,
+  "fixed_vectors_checksum_verified": 221,
+  "project_file_entries_checked": 107,
+  "original_user_source_files_preserved": 248,
+  "bitstream_sha256": "65f126783679ce582e8e547be087f7dc8174d6905c7cf405c8118d9c1c7acda6",
+  "checks": [
+    "RTL tests",
+    "project references",
+    "ROM data",
+    "source preservation",
+    "bitstream checksum",
+    "third-party licenses"
+  ]
+}

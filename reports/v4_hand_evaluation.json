@@ -1,0 +1,39 @@
+{
+  "scope": "Frozen filename-heldout public scenes and synthetic dimming, not camera accuracy; no retraining",
+  "results": [
+    {
+      "brightness": 1,
+      "confusion": {
+        "v3": {
+          "tp": 45,
+          "fp": 1,
+          "tn": 466,
+          "fn": 7
+        },
+        "v4": {
+          "tp": 45,
+          "fp": 1,
+          "tn": 466,
+          "fn": 7
+        }
+      }
+    },
+    {
+      "brightness": 0.55,
+      "confusion": {
+        "v3": {
+          "tp": 29,
+          "fp": 5,
+          "tn": 462,
+          "fn": 23
+        },
+        "v4": {
+          "tp": 39,
+          "fp": 5,
+          "tn": 462,
+          "fn": 13
+        }
+      }
+    }
+  ]
+}

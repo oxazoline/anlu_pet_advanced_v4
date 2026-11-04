@@ -1,0 +1,18 @@
+{
+  "neutral": {
+    "source_name": "neutral.png",
+    "sha256": "a73e65ac8e119f27325ce95c6454012ff08efbf8768a201ce97c9d731ffaed7d"
+  },
+  "happy": {
+    "source_name": "happy.png",
+    "sha256": "1034bd813bf8e7564d9fb3d0df5401f307a7f9424e3b1acc651aef1e73241b77"
+  },
+  "nervous": {
+    "source_name": "nervous.png",
+    "sha256": "64f872c752a9589e4a6a9e1fea4d7c45436c655662f94df1a13f8e6bd3e40965"
+  },
+  "rice": {
+    "source_name": "饭！.png",
+    "sha256": "9797c255ee7c751f388fe606144db19d939189aa0847cfbc1a142ab72d157ffa"
+  }
+}

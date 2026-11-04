@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "original_sha256": true,
+  "reproduced_sprite_indices": 16384,
+  "palette_colours": 16,
+  "golden_pixels": 16384,
+  "scope": "Exact supplied PNG -> deterministic shared palette -> ROM/golden data; no original edits"
+}
